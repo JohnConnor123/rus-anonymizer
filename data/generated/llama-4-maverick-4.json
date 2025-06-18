@@ -1,0 +1,3979 @@
+{
+  "metadata": {
+    "total_dialogs": 500,
+    "generation_timestamp": 1750283188.0569782,
+    "model_used": "meta-llama/llama-4-maverick",
+    "generation_stats": {
+      "total_generated": 0,
+      "successful_batches": 25,
+      "failed_batches": 0,
+      "total_cost_tokens": 101532,
+      "generation_configs": [
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Казань",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Новосибирск",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "официальный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 71,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "плохое",
+          "communication_style": "официальный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "официальный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Нижний Новгород",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 73,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        }
+      ]
+    }
+  },
+  "dialogs": [
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена Васильевна. Я звоню из компании 'Казанский Дом'. Мы занимаемся розничной торговлей стройматериалами. Как я могу вам помочь?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Приветствие менеджера",
+      "id": 1
+    },
+    {
+      "text": "Добрый день! Я хотел бы узнать о статусе моего заказа номер 14567. Мои контактные данные: +7 987 654 32 10.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос статуса заказа",
+      "id": 2
+    },
+    {
+      "text": "Здравствуйте! Я оформлял заказ на сайте и указал email ivanov@mail.ru. Могу ли я получить счет на оплату?",
+      "entities": [
+        {
+          "start": 55,
+          "end": 69,
+          "type": "EMAIL",
+          "text": "ivanov@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос счета на оплату",
+      "id": 3
+    },
+    {
+      "text": "Да, конечно! Ваш заказ будет доставлен по адресу: г. Казань, ул. Горького, д. 12, кв. 34. Верно?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение адреса доставки",
+      "id": 4
+    },
+    {
+      "text": "Мне нужно заполнить данные для доставки. Ваш паспорт: серия 9205 номер 123456?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос паспортных данных",
+      "id": 5
+    },
+    {
+      "text": "Да, все верно. И еще мне нужно указать СНИЛС: 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание СНИЛС",
+      "id": 6
+    },
+    {
+      "text": "Общая сумма заказа составляет 12500 рублей. Оплатить можно на карту Сбербанка 4276 3800 1234 5678.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об оплате",
+      "id": 7
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет возврата товара. Мой номер заказа: #2345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на возврат товара",
+      "id": 8
+    },
+    {
+      "text": "Хорошо, для возврата мне понадобится ваш ИНН: 165432165432.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос ИНН для возврата",
+      "id": 9
+    },
+    {
+      "text": "У меня есть промокод на скидку. Могу ли я его использовать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о промокоде",
+      "id": 10
+    },
+    {
+      "text": "Да, конечно! Назовите ваш промокод.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ о промокоде",
+      "id": 11
+    },
+    {
+      "text": "Мой VIN номер автомобиля: XW8ZZZ4C9DW123456. Хочу заказать запчасти.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Заказ запчастей с указанием VIN",
+      "id": 12
+    },
+    {
+      "text": "Для оформления гарантии нужен номер вашего водительского удостоверения: 12АВ123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос номера водительского удостоверения",
+      "id": 13
+    },
+    {
+      "text": "Я хочу купить iPhone 14 Pro Max. Какой у него артикул?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на модели техники",
+      "id": 14
+    },
+    {
+      "text": "Здравствуйте! Я из компании 'Казанский Мотор'. Наш адрес: г. Казань, ул. Восход, д. 1.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Приветствие с указанием компании и адреса",
+      "id": 15
+    },
+    {
+      "text": "Могу ли я оплатить заказ наличными при получении?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос об оплате",
+      "id": 16
+    },
+    {
+      "text": "Да, такая возможность есть. Доставка будет осуществлена курьером на адрес: г. Казань, ул. Профсоюзная, д. 45, кв. 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о доставке",
+      "id": 17
+    },
+    {
+      "text": "Отлично! И еще скажите, пожалуйста, ваш email для отправки чека?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос email для отправки чека",
+      "id": 18
+    },
+    {
+      "text": "Мой email: petrov@yandex.ru. Спасибо!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание email",
+      "id": 19
+    },
+    {
+      "text": "Все, ваш заказ принят! Чек будет отправлен на petrov@yandex.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение отправки чека",
+      "id": 20
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена. Я звоню из Новосибирского отделения Сбербанка. Мы рассматриваем вашу заявку на кредит. Скажите, вы сейчас свободны для разговора?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из банка с упоминанием имени сотрудника",
+      "id": 21
+    },
+    {
+      "text": "Да, конечно. Я ждал вашего звонка. Номер договора у меня есть - 12345/67890.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент подтверждает ожидание звонка и указывает номер договора",
+      "id": 22
+    },
+    {
+      "text": "Хорошо. По вашей заявке требуется подтверждение дохода. Можете ли вы предоставить справку 2-НДФЛ?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на предоставление справки о доходах",
+      "id": 23
+    },
+    {
+      "text": "Да, конечно. Я могу принести ее в офис на Красном проспекте завтра после 14:00.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент соглашается принести справку и упоминает адрес офиса",
+      "id": 24
+    },
+    {
+      "text": "Отлично. Наш адрес: Красный проспект, 23. Ждем вас завтра. Ваше имя в системе - Сидорова Мария Ивановна?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение адреса офиса и имени клиента",
+      "id": 25
+    },
+    {
+      "text": "Да, все верно. Я буду завтра. До свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент подтверждает имя и завершает разговор",
+      "id": 26
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет вашей карты. Номер карты заканчивается на 1234. Вы получали уведомление о блокировке?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок с упоминанием последних цифр номера карты",
+      "id": 27
+    },
+    {
+      "text": "Нет, не получал. Что случилось?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент отвечает на вопрос о блокировке карты",
+      "id": 28
+    },
+    {
+      "text": "Возможно, была попытка мошенничества. Мы заблокировали карту для безопасности. Нужно приехать и переоформить новую.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Объяснение причины блокировки карты",
+      "id": 29
+    },
+    {
+      "text": "Хорошо. У меня есть паспорт под рукой - серия 5407, номер 123456. Я могу продиктовать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент предлагает продиктовать паспортные данные",
+      "id": 30
+    },
+    {
+      "text": "Да, пожалуйста. Нам нужны эти данные для проверки.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает необходимость паспортных данных",
+      "id": 31
+    },
+    {
+      "text": "5407 123456. Выдан Ленинским РОВД Новосибирска в 2015 году.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "PASSPORT",
+          "text": "5407 123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент диктует паспортные данные",
+      "id": 32
+    },
+    {
+      "text": "Спасибо. Все в порядке. Новая карта будет готова через 5 рабочих дней.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает получение данных и информирует о сроке изготовления новой карты",
+      "id": 33
+    },
+    {
+      "text": "Отлично! И еще вопрос - мой СНИЛС есть в деле? Номер 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент спрашивает о наличии СНИЛС в деле и частично диктует номер",
+      "id": 34
+    },
+    {
+      "text": "Да, ваш СНИЛС у нас есть. Все в порядке.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает наличие СНИЛС",
+      "id": 35
+    },
+    {
+      "text": "Здравствуйте! Я хочу открыть вклад. Какой у вас процент?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент интересуется условиями вклада",
+      "id": 36
+    },
+    {
+      "text": "Наш лучший вклад - 'Премиум'. 8% годовых. Вас интересует?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка предлагает вклад под определенный процент",
+      "id": 37
+    },
+    {
+      "text": "Да, интересно. Но сначала скажите, а что с безопасностью моих данных?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент выражает интерес к вкладу и задает вопрос о безопасности данных",
+      "id": 38
+    },
+    {
+      "text": "Все наши данные хранятся в соответствии с законом 152-ФЗ о персональных данных. Вы можете быть уверены в безопасности.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка заверяет клиента в соответствии хранения данных законодательству",
+      "id": 39
+    },
+    {
+      "text": "Хорошо, я подумаю. Мой email - example@yandex.ru. Можете прислать подробности?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент предоставляет email для отправки подробностей",
+      "id": 40
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я хотел бы узнать о статусе моего заказа.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос статуса заказа",
+      "id": 41
+    },
+    {
+      "text": "Мой телефон +7 916 123 45 67. Позвоните мне, когда товар прибудет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Оставление контактного номера",
+      "id": 42
+    },
+    {
+      "text": "Я живу на улице Пушкинской, дом 123. Можете ли доставить товар туда?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание адреса доставки",
+      "id": 43
+    },
+    {
+      "text": "Моя электронная почта ivan@mail.ru. Отправьте детали заказа на нее.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание email для отправки деталей заказа",
+      "id": 44
+    },
+    {
+      "text": "Мне 25 лет. Это важно для оформления гарантии.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание возраста для гарантии",
+      "id": 45
+    },
+    {
+      "text": "Здравствуйте! Я хотел бы вернуть товар. Мой номер заказа #12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на возврат товара",
+      "id": 46
+    },
+    {
+      "text": "Я купил товар в вашем магазине на улице Ленина. Теперь хочу вернуть.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Возврат товара",
+      "id": 47
+    },
+    {
+      "text": "Моя карта МИР 2200 1234 5678 9012. Можно ли оплатить ею?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Оплата картой",
+      "id": 48
+    },
+    {
+      "text": "Я родился в 1990 году. Это влияет на скидку?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о скидке в зависимости от возраста",
+      "id": 49
+    },
+    {
+      "text": "Мой СНИЛС 123-456-789 12. Нужно ли его указывать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание СНИЛС",
+      "id": 50
+    },
+    {
+      "text": "Я хочу доставить товар на Театральную площадь.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание адреса доставки",
+      "id": 51
+    },
+    {
+      "text": "Модель телефона iPhone 14 Pro Max. Это не персональные данные.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на модели товаров",
+      "id": 52
+    },
+    {
+      "text": "Меня зовут Катя. Я звоню насчет заказа.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обращение по имени",
+      "id": 53
+    },
+    {
+      "text": "Я жду доставку в течение 3 рабочих дней.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о доставке",
+      "id": 54
+    },
+    {
+      "text": "Мой VIN номер автомобиля VF1234567890. Есть ли скидка для автовладельцев?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Указание VIN номера",
+      "id": 55
+    },
+    {
+      "text": "Я являюсь сотрудником компании ООО 'РостТех'. Можем ли мы получить оптовую скидку?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на оптовую скидку для компании",
+      "id": 56
+    },
+    {
+      "text": "Я оплатил заказ на сайте. Номер транзакции 123456789.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об оплате",
+      "id": 57
+    },
+    {
+      "text": "Моя жена зовут Елена. Она тоже хочет сделать заказ.",
+      "entities": [
+        {
+          "start": 4,
+          "end": 8,
+          "type": "FAMILY",
+          "text": "жена"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание члена семьи",
+      "id": 58
+    },
+    {
+      "text": "Я учился в РГУ. Это хороший университет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание учебного заведения",
+      "id": 59
+    },
+    {
+      "text": "Меня зовут Сергей. Я интересуюсь вашим предложением.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление",
+      "id": 60
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Иванович Иванов. Я звоню насчёт заявки на ремонт квартиры. Номер заявки 12345. Дата обращения 20.10.2023. Мастер будет у вас 22.10.2023.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Заявка на ремонт квартиры",
+      "id": 61
+    },
+    {
+      "text": "Привет! Хочу купить iPhone 14 Pro Max. Сколько стоит?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости товара",
+      "id": 62
+    },
+    {
+      "text": "Здравствуйте! Номер вашего заказа 98765. Сумма к оплате 15000 рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о заказе",
+      "id": 63
+    },
+    {
+      "text": "Меня зовут Анна Петрова. Мой телефон +7 921 123 45 67. Хочу записаться на приём.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на приём",
+      "id": 64
+    },
+    {
+      "text": "Ваш email указан неверно. Должно быть example@yandex.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Исправление email",
+      "id": 65
+    },
+    {
+      "text": "Мне 25 лет. Родился в 1998 году.",
+      "entities": [
+        {
+          "start": 4,
+          "end": 6,
+          "type": "AGE",
+          "text": "25"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание возраста",
+      "id": 66
+    },
+    {
+      "text": "Адрес доставки: Санкт-Петербург, ул. Ленина, д. 5, кв. 12. Индекс 198000.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Адрес доставки",
+      "id": 67
+    },
+    {
+      "text": "Номер СНИЛС: 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание СНИЛС",
+      "id": 68
+    },
+    {
+      "text": "ИНН компании 1234567890. КПП 123456789.",
+      "entities": [
+        {
+          "start": 13,
+          "end": 23,
+          "type": "INN",
+          "text": "1234567890"
+        }
+      ],
+      "has_pd": true,
+      "description": "Реквизиты компании",
+      "id": 69
+    },
+    {
+      "text": "Номер карты Visa: 4111 1111 1111 1111.",
+      "entities": [
+        {
+          "start": 18,
+          "end": 37,
+          "type": "BANK_CARD",
+          "text": "4111 1111 1111 1111"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание номера карты",
+      "id": 70
+    },
+    {
+      "text": "Госномер автомобиля: А123АА178.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание госномера",
+      "id": 71
+    },
+    {
+      "text": "Здравствуйте! Я из компании Рога и Копыта.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание компании",
+      "id": 72
+    },
+    {
+      "text": "Моя должность - менеджер по продажам.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание должности",
+      "id": 73
+    },
+    {
+      "text": "Я учился в СПбГУ на факультете экономики.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание учебного заведения",
+      "id": 74
+    },
+    {
+      "text": "Мой брат зовут Сергей. Ему 30 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание родственника",
+      "id": 75
+    },
+    {
+      "text": "У меня есть машина BMW X5.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание модели автомобиля",
+      "id": 76
+    },
+    {
+      "text": "Я родился 12.05.1990 года.",
+      "entities": [
+        {
+          "start": 10,
+          "end": 20,
+          "type": "BIRTHDAY",
+          "text": "12.05.1990"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание даты рождения",
+      "id": 77
+    },
+    {
+      "text": "Мой IP адрес 192.168.0.1.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание IP адреса",
+      "id": 78
+    },
+    {
+      "text": "Я живу в районе метро Петроградская.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание места жительства",
+      "id": 79
+    },
+    {
+      "text": "Здравствуйте! Как вас зовут?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Приветствие без ПД",
+      "id": 80
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович. Я звоню по поводу заказа в вашей компании. Дату доставки согласовали?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о доставке",
+      "id": 81
+    },
+    {
+      "text": "Да, конечно. Ваш заказ будет доставлен 25 мая. Номер вашего заказа #4521. Ожидайте звонка нашего менеджера.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение доставки",
+      "id": 82
+    },
+    {
+      "text": "Хорошо, спасибо. А могу ли я узнать контакты менеджера? Меня зовут Елена Васильевна.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос контактов менеджера",
+      "id": 83
+    },
+    {
+      "text": "Контакты менеджера: +7 912 345 67 89, email: manager@company.ru. Мы свяжемся с вами в ближайшее время.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактов менеджера",
+      "id": 84
+    },
+    {
+      "text": "Отлично, спасибо! Жду звонка. До свидания.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 85
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт ремонта квартиры по адресу улица Малышева, 23. Кто будет выполнять работы?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о ремонтнике",
+      "id": 86
+    },
+    {
+      "text": "Работы будет выполнять наш мастер Сергей. Его телефон +7 922 111 22 33.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление информации о мастере",
+      "id": 87
+    },
+    {
+      "text": "Хорошо, спасибо. А когда можно ожидать начало работ?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о начале работ",
+      "id": 88
+    },
+    {
+      "text": "Работы начнутся 1 июня. Мы пришлём вам точное время.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о начале работ",
+      "id": 89
+    },
+    {
+      "text": "Отлично, меня зовут Наталья Ивановна. Жду уведомления.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление",
+      "id": 90
+    },
+    {
+      "text": "Здравствуйте, Наталья Ивановна! Мы отправим вам уведомление за день до начала работ.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение уведомления",
+      "id": 91
+    },
+    {
+      "text": "Спасибо, до свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 92
+    },
+    {
+      "text": "Могу ли я оплатить заказ банковской картой? Номер карты 4276 1234 5678 9012.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Оплата картой",
+      "id": 93
+    },
+    {
+      "text": "Да, вы можете оплатить картой. Но мы не храним данные карт. Пожалуйста, введите данные на нашем сайте.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Инструкции по оплате",
+      "id": 94
+    },
+    {
+      "text": "Хорошо, спасибо за информацию.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 95
+    },
+    {
+      "text": "Я хочу заказать доставку на адрес улица Вайнера, 12, кв. 34. Возможно ли это?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на доставку",
+      "id": 96
+    },
+    {
+      "text": "Да, это возможно. Доставка будет осуществлена в течение 3 дней. Номер вашего заказа #7890.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение доставки",
+      "id": 97
+    },
+    {
+      "text": "Отлично, спасибо! Номер моего телефона +7 999 888 77 66.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление номера телефона",
+      "id": 98
+    },
+    {
+      "text": "Записали. Мы свяжемся с вами по номеру +7 999 888 77 66.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение номера телефона",
+      "id": 99
+    },
+    {
+      "text": "Спасибо, до свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 100
+    },
+    {
+      "text": "Привет, меня зовут Иван. Хочу купить машину. Мой телефон +7 921 123 45 67. Интересует BMW X5.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 101
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Мария Ивановна. Хочу узнать про Toyota Camry 2018 года. Мой email: mariya@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 102
+    },
+    {
+      "text": "Привет. Хочу продать свою машину. Ford Focus 2015 года. Пробег 80 тыс. км. Пишите на почту: ford_focus@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 103
+    },
+    {
+      "text": "Здравствуйте! Интересует цена на Hyundai Solaris. Мой номер 8921 765 43 21",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос цены на автомобиль",
+      "id": 104
+    },
+    {
+      "text": "Добрый день! Хочу записаться на тест-драйв Kia Rio. Когда можно подъехать? Телефон для связи +7 911 234 56 78",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на тест-драйв",
+      "id": 105
+    },
+    {
+      "text": "Привет! Продаю свою машину. ВАЗ 2110 2007 года. Цена 100 тыс. рублей. Обращаться по телефону 8 921 345 67 89",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 106
+    },
+    {
+      "text": "Здравствуйте! Интересует страховка для моего автомобиля. Nissan Qashqai. VIN номер: XXXXXXXXXXXXXXXX",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на страховку автомобиля",
+      "id": 107
+    },
+    {
+      "text": "Добрый день! Хочу узнать про кредит на покупку автомобиля. Renault Logan. Какой нужен пакет документов?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о кредите",
+      "id": 108
+    },
+    {
+      "text": "Привет! Хочу купить подержанную машину. Интересует Honda Civic. Бюджет 500 тыс. рублей. Мой email: honda_civic@gmail.com",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск подержанного автомобиля",
+      "id": 109
+    },
+    {
+      "text": "Здравствуйте! Продаю свой автомобиль. Mercedes-Benz E-Class. 2012 год. Пробег 120 тыс. км. Обращаться по телефону +7 901 123 45 67",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 110
+    },
+    {
+      "text": "Добрый день! Интересует стоимость ОСАГО для моего автомобиля. Mazda 3. Госномер: А123АА178",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости ОСАГО",
+      "id": 111
+    },
+    {
+      "text": "Привет! Хочу узнать про Toyota RAV4. Гибридная версия. Мой телефон: 8 911 456 78 90",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 112
+    },
+    {
+      "text": "Здравствуйте! Интересует покупка автомобиля в кредит. Volkswagen Polo. Какие документы нужны?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о кредите",
+      "id": 113
+    },
+    {
+      "text": "Добрый день! Продаю свой автомобиль. Audi A4. 2015 год. Пробег 70 тыс. км. Цена 800 тыс. рублей. Обращаться по телефону +7 921 567 89 01",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 114
+    },
+    {
+      "text": "Привет! Интересует Subaru Forester. Хочу узнать про технические характеристики. Мой email: subaru_forester@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос технических характеристик",
+      "id": 115
+    },
+    {
+      "text": "Здравствуйте! Хочу купить новый автомобиль. Интересует Skoda Octavia. Хочу узнать про комплектации.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 116
+    },
+    {
+      "text": "Добрый день! Продаю свой автомобиль. Hyundai Elantra. 2013 год. Пробег 150 тыс. км. Цена 400 тыс. рублей. Телефон для связи: 8 911 234 56 78",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 117
+    },
+    {
+      "text": "Привет! Хочу узнать про Mitsubishi Outlander. Гибридная версия. Мой номер телефона: +7 921 765 43 21",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 118
+    },
+    {
+      "text": "Здравствуйте! Интересует покупка подержанного автомобиля. Ford Mondeo. Бюджет 300 тыс. рублей. Хочу узнать про состояние автомобиля.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о подержанном автомобиле",
+      "id": 119
+    },
+    {
+      "text": "Добрый день! Продаю свой автомобиль. Volkswagen Golf. 2014 год. Пробег 90 тыс. км. Цена 600 тыс. рублей. Обращаться по телефону +7 901 345 67 89",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 120
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я хотел бы узнать о статусе моего заказа номер 1456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос статуса заказа",
+      "id": 121
+    },
+    {
+      "text": "Привет! Ваш номер телефона +7 916 123 45 67. Мы вам перезвоним в течение 5 минут.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Уведомление о перезвоне",
+      "id": 122
+    },
+    {
+      "text": "Моя электронная почта ivanov@mail.ru. Пожалуйста, пришлите детали заказа на неё.",
+      "entities": [
+        {
+          "start": 21,
+          "end": 36,
+          "type": "EMAIL",
+          "text": " ivanov@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос деталей заказа на email",
+      "id": 123
+    },
+    {
+      "text": "Мне 32 года, могу ли я получить скидку как молодой покупатель?",
+      "entities": [
+        {
+          "start": 4,
+          "end": 6,
+          "type": "AGE",
+          "text": "32"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос скидки",
+      "id": 124
+    },
+    {
+      "text": "Я живу на улице Ленина, дом 5. Можете ли доставить товар туда?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос доставки",
+      "id": 125
+    },
+    {
+      "text": "Мой паспорт серия 45 01 номер 123456. Нужно ли его указывать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Уточнение по паспорту",
+      "id": 126
+    },
+    {
+      "text": "СНИЛС у меня 123-456-789 12. Нужно ли его предоставлять?",
+      "entities": [
+        {
+          "start": 12,
+          "end": 27,
+          "type": "SNILS",
+          "text": " 123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Уточнение по СНИЛС",
+      "id": 127
+    },
+    {
+      "text": "Мой ИНН 123456789012. Это нужно для оформления гарантии?",
+      "entities": [
+        {
+          "start": 8,
+          "end": 20,
+          "type": "INN",
+          "text": "123456789012"
+        }
+      ],
+      "has_pd": true,
+      "description": "Уточнение по ИНН",
+      "id": 128
+    },
+    {
+      "text": "Номер моей карты 4111 1111 1111 1111. Могу ли я оплатить ею?",
+      "entities": [
+        {
+          "start": 17,
+          "end": 36,
+          "type": "BANK_CARD",
+          "text": "4111 1111 1111 1111"
+        }
+      ],
+      "has_pd": true,
+      "description": "Оплата картой",
+      "id": 129
+    },
+    {
+      "text": "Госномер моей машины А 123 АА 77. Это важно для доставки?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Уточнение по госномеру",
+      "id": 130
+    },
+    {
+      "text": "Здравствуйте! Я из компании Рога и Копыта. Хотим сделать оптовый заказ.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на оптовый заказ",
+      "id": 131
+    },
+    {
+      "text": "Я менеджер по закупкам. Моя должность — руководитель отдела.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление",
+      "id": 132
+    },
+    {
+      "text": "Я учился в МГУ на факультете экономики. Закончил в 2010 году.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об образовании",
+      "id": 133
+    },
+    {
+      "text": "Мой брат зовется Сергей. Ему 25 лет.",
+      "entities": [
+        {
+          "start": 4,
+          "end": 8,
+          "type": "FAMILY",
+          "text": "брат"
+        }
+      ],
+      "has_pd": true,
+      "description": "Информация о родственнике",
+      "id": 134
+    },
+    {
+      "text": "У меня есть проблема со здоровьем. Я наблюдаюсь у врача в клинике Медси.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Медицинская информация",
+      "id": 135
+    },
+    {
+      "text": "Давайте обсудим заказ. Номер заказа 12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение заказа без ПД",
+      "id": 136
+    },
+    {
+      "text": "Товар будет доставлен через 3 дня. Ожидайте.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о доставке без ПД",
+      "id": 137
+    },
+    {
+      "text": "iPhone 14 Pro Max стоит 100 тысяч рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание",
+      "id": 138
+    },
+    {
+      "text": "Штрихкод товара 1234567890123.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на штрихкод",
+      "id": 139
+    },
+    {
+      "text": "Дата основания Москвы — 1147 год.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Историческая дата",
+      "id": 140
+    },
+    {
+      "text": "Здравствуйте, меня зовут Иван Иванович. Я звоню насчёт поступления в МГУ. Какие документы нужны?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о поступлении в МГУ",
+      "id": 141
+    },
+    {
+      "text": "Добрый день! Мне нужно записаться на курсы по программированию. Как это сделать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на курсы",
+      "id": 142
+    },
+    {
+      "text": "Меня зовут Анна Петрова. Я хочу узнать о стоимости обучения в вашем университете. Мой email: anna@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости обучения",
+      "id": 143
+    },
+    {
+      "text": "Здравствуйте! Я звоню с номера +7 916 123 45 67. Хочу узнать о возможности поступления на бюджетное отделение.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о бюджетном отделении",
+      "id": 144
+    },
+    {
+      "text": "Меня зовут Сергей. Я родился в 1995 году. Могу ли я поступить к вам в аспирантуру?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о поступлении в аспирантуру",
+      "id": 145
+    },
+    {
+      "text": "Добрый день! Я представляю компанию 'Образовательные технологии'. Мы предлагаем курсы для преподавателей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление компании",
+      "id": 146
+    },
+    {
+      "text": "Мой паспорт: серия 4606, номер 123456. Дата рождения: 12.05.1990.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление паспортных данных",
+      "id": 147
+    },
+    {
+      "text": "Я живу на улице Ленина, дом 15. Как мне добраться до вашего центра?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о направлении",
+      "id": 148
+    },
+    {
+      "text": "Ближайшая станция метро — Сокольники. Вам нужно ехать в обратном направлении.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о метро",
+      "id": 149
+    },
+    {
+      "text": "Мой СНИЛС: 123-456-789 12. Проверьте, пожалуйста, правильность.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 25,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление СНИЛС",
+      "id": 150
+    },
+    {
+      "text": "Я оплатил обучение по реквизитам: БИК 044525225, корр.счет 30101810400000000225.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об оплате",
+      "id": 151
+    },
+    {
+      "text": "Моя дочь учится в школе № 1234 на улице Вавилова.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о ребёнке",
+      "id": 152
+    },
+    {
+      "text": "Я окончил МГТУ им. Баумана в 2010 году.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об образовании",
+      "id": 153
+    },
+    {
+      "text": "Мой номер карты: 2200 1234 5678 9012. Срок действия: 12/25.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление данных банковской карты",
+      "id": 154
+    },
+    {
+      "text": "Я покупаю iPhone 14 Pro Max. Его номер модели — A289.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на номере модели",
+      "id": 155
+    },
+    {
+      "text": "Мой VIN номер автомобиля: XW8ZZZ4C3D123456. Хочу записаться на ТО.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление VIN номера",
+      "id": 156
+    },
+    {
+      "text": "Я родился 25 января 1985 года. Мне сейчас 38 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о возрасте",
+      "id": 157
+    },
+    {
+      "text": "Меня зовут Елена Васильевна. Я преподаватель математики.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление преподавателя",
+      "id": 158
+    },
+    {
+      "text": "Наш адрес: Москва, Садовое кольцо, 12. Ждём вас!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об адресе",
+      "id": 159
+    },
+    {
+      "text": "Я студент 3 курса. Мой средний балл — 4,5.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о студенте",
+      "id": 160
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович. Я звоню насчёт кредита. Да, здравствуйте, Иван Петрович! Какой кредит вас интересует?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о кредите",
+      "id": 161
+    },
+    {
+      "text": "Мой номер телефона +7 916 123-45-67. Я жду вашего звонка. Хорошо, запишу. +7 916 123-45-67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обмен номерами телефонов",
+      "id": 162
+    },
+    {
+      "text": "Я родился в 1985 году, значит мне 38 лет. Понятно, вам 38 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение возраста",
+      "id": 163
+    },
+    {
+      "text": "Мой email ivanov@mail.ru. Хорошо, напишу на ivanov@mail.ru.",
+      "entities": [
+        {
+          "start": 9,
+          "end": 24,
+          "type": "EMAIL",
+          "text": " ivanov@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Обмен email адресами",
+      "id": 164
+    },
+    {
+      "text": "Я живу на улице Ленина, дом 5. Понятно, улица Ленина, 5.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение адреса",
+      "id": 165
+    },
+    {
+      "text": "Номер моей карты 4276 3800 1234 5678. Хорошо, ваша карта 4276 3800 1234 5678.",
+      "entities": [
+        {
+          "start": 17,
+          "end": 36,
+          "type": "BANK_CARD",
+          "text": "4276 3800 1234 5678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Обмен данными банковской карты",
+      "id": 166
+    },
+    {
+      "text": "Я хочу купить iPhone 14 Pro Max. Это отличный выбор!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение покупки телефона",
+      "id": 167
+    },
+    {
+      "text": "Моя машина имеет номер А 123 АА 77. Понятно, А 123 АА 77.",
+      "entities": [
+        {
+          "start": 45,
+          "end": 56,
+          "type": "CAR_NUMBER",
+          "text": "А 123 АА 77"
+        }
+      ],
+      "has_pd": true,
+      "description": "Обсуждение номера автомобиля",
+      "id": 168
+    },
+    {
+      "text": "Я работаю в компании Сбербанк. Понятно, в Сбербанке.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение места работы",
+      "id": 169
+    },
+    {
+      "text": "Я являюсь пенсионером, мне 65 лет. Понятно, вам 65 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение пенсионного возраста",
+      "id": 170
+    },
+    {
+      "text": "Мой СНИЛС 123-456-789 12. Хорошо, ваш СНИЛС 123-456-789 12.",
+      "entities": [
+        {
+          "start": 10,
+          "end": 24,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Обмен СНИЛС",
+      "id": 171
+    },
+    {
+      "text": "Я закончил МГУ. Понятно, вы выпускник МГУ.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение образования",
+      "id": 172
+    },
+    {
+      "text": "Мой ИНН 770101234567. Хорошо, ваш ИНН 770101234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обмен ИНН",
+      "id": 173
+    },
+    {
+      "text": "Я хочу купить BMW X5. Это хороший выбор!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение покупки автомобиля",
+      "id": 174
+    },
+    {
+      "text": "Мой паспорт серия 45 06 номер 123456. Хорошо, ваш паспорт 45 06 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обмен паспортными данными",
+      "id": 175
+    },
+    {
+      "text": "Я живу рядом с метро Сокольники. Понятно, рядом с Сокольниками.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение места жительства",
+      "id": 176
+    },
+    {
+      "text": "Сумма кредита составит 500 тысяч рублей. Хорошо, 500 тысяч.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение суммы кредита",
+      "id": 177
+    },
+    {
+      "text": "Я хочу открыть вклад на 1 миллион рублей. Понятно, на 1 миллион.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение вклада",
+      "id": 178
+    },
+    {
+      "text": "Номер договора 12345. Хорошо, договор 12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение номера договора",
+      "id": 179
+    },
+    {
+      "text": "Здравствуйте! Как я могу вам помочь? Спасибо, просто звоню узнать информацию.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информационный звонок",
+      "id": 180
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович. Я звоню по поводу покупки автомобиля BMW X5. Интересует цена и комплектация.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 181
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль ВАЗ 2110, 2007 года выпуска, пробег 120000 км. Обращайтесь по номеру +7 912 345 67 89.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 182
+    },
+    {
+      "text": "Добрый день! Интересует стоимость ОСАГО для моего автомобиля Toyota Camry. VIN номер: XTA21010000000000.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости ОСАГО",
+      "id": 183
+    },
+    {
+      "text": "Здравствуйте! Я менеджер автосалона 'Автомир'. Мы предлагаем автомобили в кредит. Свяжитесь со мной по email: manager@avtomir.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предложение автомобилей в кредит",
+      "id": 184
+    },
+    {
+      "text": "Привет! Мне нужен автомобиль с госномером У777АА66. Как можно связаться с владельцем?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск владельца автомобиля по госномеру",
+      "id": 185
+    },
+    {
+      "text": "Добрый день! Хочу записаться на ТО в ваш сервисный центр. Машина - Hyundai Solaris, VIN: KMHXXXXXXXXXXXXXXX.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на ТО",
+      "id": 186
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт автомобиля Mazda 3, который вы продаёте. Какой пробег?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 187
+    },
+    {
+      "text": "Привет! Продаю свой старый Nissan Qashqai. 2012 год, пробег 80000 км. Звоните +7 922 111 22 33.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 188
+    },
+    {
+      "text": "Добрый день! Интересует КАСКО для моего нового автомобиля Kia Rio. Как можно рассчитать стоимость?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости КАСКО",
+      "id": 189
+    },
+    {
+      "text": "Здравствуйте! Я Иван Иванович. Хочу узнать о возможности выкупа моего автомобиля Renault Logan.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о выкупе автомобиля",
+      "id": 190
+    },
+    {
+      "text": "Привет! У меня есть автомобиль Ford Focus, 2015 года. Хочу продать. Обращайтесь по телефону 8 343 200 30 40.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 191
+    },
+    {
+      "text": "Добрый день! Интересует диагностика автомобиля Audi A4. Сколько стоит эта услуга?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости диагностики",
+      "id": 192
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу автомобиля Volkswagen Polo. Хочу узнать о наличии и цене.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 193
+    },
+    {
+      "text": "Привет! Покупаю автомобиль у компании 'АвтоПремиум'. Контактное лицо - Сергей Николаевич. Его телефон: +7 912 876 54 32.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля у компании",
+      "id": 194
+    },
+    {
+      "text": "Добрый день! Хочу узнать о страховании автомобиля Skoda Octavia. Какие документы нужны?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о страховании автомобиля",
+      "id": 195
+    },
+    {
+      "text": "Здравствуйте! Я продаю свой автомобиль Honda Civic. 2009 год, пробег 150000 км. Email: vasya@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 196
+    },
+    {
+      "text": "Привет! Интересует автомобиль Mitsubishi Lancer. Есть ли в наличии?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос наличия автомобиля",
+      "id": 197
+    },
+    {
+      "text": "Добрый день! Хочу узнать о кредите на автомобиль Peugeot 308. Какие условия?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о кредите на автомобиль",
+      "id": 198
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт автомобиля Lexus RX. Интересует комплектация и цена.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации об автомобиле",
+      "id": 199
+    },
+    {
+      "text": "Привет! Продаю свой старый автомобиль Daewoo Nexia. 2005 год, пробег 200000 км. Звоните +7 965 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 200
+    },
+    {
+      "text": "Привет, меня зовут Иван. Я звоню по поводу квартиры на Невском проспекте, 145. Мне нужно что-то трёхкомнатное. В объявлении было указано, что есть документы на собственность.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на трёхкомнатную квартиру",
+      "id": 201
+    },
+    {
+      "text": "Здравствуйте! Да, у нас есть вариант. Квартира на улице Восстания, 30. Площадь 120 кв.м. Цена 15 миллионов. Документы готовы, включая выписку из ЕГРН.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предложение трёхкомнатной квартиры",
+      "id": 202
+    },
+    {
+      "text": "Хорошо, это интересно. А можно ли посмотреть документы? И какой этаж?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Общий вопрос о просмотре документов",
+      "id": 203
+    },
+    {
+      "text": "Конечно, мы можем показать выписку из ЕГРН и паспорт собственника. Собственника зовут Сергей Петрович Михайлов. Квартира на 5 этаже.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о собственнике и документах",
+      "id": 204
+    },
+    {
+      "text": "Отлично, я хотел бы договориться о просмотре. Мой номер +7 921 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактного номера",
+      "id": 205
+    },
+    {
+      "text": "Хорошо, созвонимся. Наш менеджер свяжется с вами. Его имя - Алексей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о менеджере",
+      "id": 206
+    },
+    {
+      "text": "Супер, жду звонка. Ещё вопрос - есть ли во дворе детская площадка?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о инфраструктуре двора",
+      "id": 207
+    },
+    {
+      "text": "Да, во дворе есть детская площадка и парковка. Ближайшее метро - Площадь Восстания.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об инфраструктуре",
+      "id": 208
+    },
+    {
+      "text": "Отлично, это то что нужно. Ещё один вопрос - какой кадастровый номер участка?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о кадастровом номере",
+      "id": 209
+    },
+    {
+      "text": "Кадастровый номер 78:01:0000001:1234. Всё оформлено официально.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление кадастрового номера",
+      "id": 210
+    },
+    {
+      "text": "Хорошо, спасибо за информацию. Я перезвоню завтра.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Общее завершение разговора",
+      "id": 211
+    },
+    {
+      "text": "Меня зовут Елена Васильевна. Я хотела бы узнать о стоимости однокомнатной квартиры на Ленинском проспекте.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости однокомнатной квартиры",
+      "id": 212
+    },
+    {
+      "text": "Здравствуйте, Елена Васильевна! Цена начинается от 5 миллионов рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ на запрос о стоимости",
+      "id": 213
+    },
+    {
+      "text": "Это в пределах моего бюджета. Как можно посмотреть квартиру?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Намерение посмотреть квартиру",
+      "id": 214
+    },
+    {
+      "text": "Вы можете связаться с нашим агентом, её email - agent@mail.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактного email агента",
+      "id": 215
+    },
+    {
+      "text": "Хорошо, напишу ей. Спасибо за помощь!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Общее завершение разговора",
+      "id": 216
+    },
+    {
+      "text": "Обращайтесь! Хорошего дня!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вежливое завершение разговора",
+      "id": 217
+    },
+    {
+      "text": "Привет, я звоню насчёт квартиры на улице Дыбенко. Мне нужно двухкомнатную.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на двухкомнатную квартиру",
+      "id": 218
+    },
+    {
+      "text": "Есть вариант на 7 этаже, 60 кв.м. Цена 8 миллионов. Документы готовы.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предложение двухкомнатной квартиры",
+      "id": 219
+    },
+    {
+      "text": "Отлично, я хотел бы посмотреть. Мой номер 89211234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактного номера",
+      "id": 220
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я звоню по поводу покупки автомобиля BMW X5. Мой номер +7 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 221
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Toyota Camry 2020 года. Пробег 30 тысяч км. Владелец - пенсионер. Снижлена цена.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 222
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль ВАЗ 2107, 2005 года. Госномер: Т777АА77. VIN: XTA21070001234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 223
+    },
+    {
+      "text": "Здравствуйте! Я менеджер автосалона. Моя почта ivanov@yandex.ru. Позвоните +7 495 123-45-67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Контактная информация менеджера",
+      "id": 224
+    },
+    {
+      "text": "Добрый день! Хочу узнать про страховку ОСАГО. Мой СНИЛС: 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на страховку",
+      "id": 225
+    },
+    {
+      "text": "Привет! Продаю машину. Двигатель 2.0, пробег 50 тыс. км. Цена договорная.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля без ПД",
+      "id": 226
+    },
+    {
+      "text": "Здравствуйте! Я хочу купить автомобиль Mercedes-Benz E-Class. Мой email: petrov@gmail.com.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 227
+    },
+    {
+      "text": "Добрый день! Автомобиль Hyundai Solaris, 2015 год. Пробег 70 тыс. км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 228
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль Audi A4, 2018 года. Госномер: М001АА777.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 229
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу автомобиля Ford Focus. Мой телефон: 8 926 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на автомобиль",
+      "id": 230
+    },
+    {
+      "text": "Добрый день! Автомобиль в хорошем состоянии. VIN: WF0JXXWP0JYB12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 231
+    },
+    {
+      "text": "Привет! Хочу купить машину. Интересует Kia Rio. Мой номер: +7 903 1234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 232
+    },
+    {
+      "text": "Здравствуйте! Я продавец. Моя почта seller@cars.ru. Позвоните +7 495 7654321.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Контактная информация продавца",
+      "id": 233
+    },
+    {
+      "text": "Добрый день! Хочу узнать про кредит на автомобиль. Мой возраст 35 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на кредит",
+      "id": 234
+    },
+    {
+      "text": "Привет! Продаю автомобиль Volkswagen Golf. Год выпуска: 2012.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 235
+    },
+    {
+      "text": "Здравствуйте! Интересует автомобиль Skoda Octavia. Мой email: buyer@mail.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на автомобиль",
+      "id": 236
+    },
+    {
+      "text": "Добрый день! Хочу продать свой автомобиль Renault Logan, 2016 года.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 237
+    },
+    {
+      "text": "Привет! Интересует автомобиль Nissan Qashqai. Позвони +7 903 765 43 21.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на автомобиль",
+      "id": 238
+    },
+    {
+      "text": "Здравствуйте! Я покупатель. Мой номер телефона: 8-926-123-45-67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Контактная информация покупателя",
+      "id": 239
+    },
+    {
+      "text": "Добрый день! Автомобиль в отличном состоянии. Пробег 20 тыс. км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 240
+    },
+    {
+      "text": "Здравствуйте, меня зовут Иван. У меня проблема с вашим интернет-соединением. Можете помочь?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент обращается в техподдержку с проблемой",
+      "id": 241
+    },
+    {
+      "text": "Да, конечно. Ваш номер телефона +7 916 123 45 67?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка запрашивает номер телефона",
+      "id": 242
+    },
+    {
+      "text": "Да, всё верно. Мне нужно решить проблему с моим тарифом.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент подтверждает номер и описывает проблему",
+      "id": 243
+    },
+    {
+      "text": "Хорошо, Иван. Какой у вас адрес?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка запрашивает адрес клиента",
+      "id": 244
+    },
+    {
+      "text": "Москва, Ленинский проспект, 23.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент предоставляет адрес",
+      "id": 245
+    },
+    {
+      "text": "Спасибо. Мы отправим запрос. Ожидайте ответа на почту ivanov@mail.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка информирует о отправке ответа на почту",
+      "id": 246
+    },
+    {
+      "text": "Хорошо, жду. Ещё вопрос по моему паспорту.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент ожидает ответа и задает новый вопрос",
+      "id": 247
+    },
+    {
+      "text": "Да, конечно. Серия и номер паспорта?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка запрашивает паспортные данные",
+      "id": 248
+    },
+    {
+      "text": "4501 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент предоставляет паспортные данные",
+      "id": 249
+    },
+    {
+      "text": "Спасибо. Мы проверим информацию.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка благодарит за предоставленную информацию",
+      "id": 250
+    },
+    {
+      "text": "Меня зовут Сергей, и я представляю компанию 'ТехСервис'.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представитель компании представляется",
+      "id": 251
+    },
+    {
+      "text": "Здравствуйте, Сергей. У меня проблема с вашим оборудованием.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент приветствует представителя и описывает проблему",
+      "id": 252
+    },
+    {
+      "text": "Какой у вас номер договора?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представитель запрашивает номер договора",
+      "id": 253
+    },
+    {
+      "text": "12345.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "FALSE_POSITIVE",
+          "text": "12345"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент предоставляет номер договора (ложное срабатывание)",
+      "id": 254
+    },
+    {
+      "text": "Спасибо. Мы решим вашу проблему в ближайшее время.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представитель информирует о решении проблемы",
+      "id": 255
+    },
+    {
+      "text": "Меня зовут Анна. Я хотела бы узнать о статусе моего заказа.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиентка Анна обращается в техподдержку",
+      "id": 256
+    },
+    {
+      "text": "Здравствуйте, Анна. Ваш номер заказа?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка приветствует Анну и запрашивает номер заказа",
+      "id": 257
+    },
+    {
+      "text": "ABC123.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "FALSE_POSITIVE",
+          "text": "ABC123"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиентка предоставляет номер заказа (ложное срабатывание)",
+      "id": 258
+    },
+    {
+      "text": "Хорошо. Мы проверим и свяжемся с вами.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка информирует о проверке и обратной связи",
+      "id": 259
+    },
+    {
+      "text": "Спасибо. Жду ответа на мой email anna@yandex.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиентка благодарит и указывает email для ответа",
+      "id": 260
+    },
+    {
+      "text": "Привет, меня зовут Иван. Я звоню насчёт машины, которую вы продаёте. Можно ли её посмотреть в районе Театральной площади?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на просмотр машины",
+      "id": 261
+    },
+    {
+      "text": "Да, конечно. Машина находится на улице Пушкинской, 123. VIN номер — XW8JD8JDW777777. Цена 500 тысяч рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление информации о машине",
+      "id": 262
+    },
+    {
+      "text": "Хорошо, я подъеду завтра. Мой телефон +7 918 123 45 67. Свяжитесь со мной, если что-то изменится.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактной информации",
+      "id": 263
+    },
+    {
+      "text": "Машина в отличном состоянии. Пробег 50 тысяч км. Год выпуска 2018. Цвет — чёрный.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Характеристики машины",
+      "id": 264
+    },
+    {
+      "text": "Можно ли сделать скидку? Я готов купить прямо сейчас. Мой email: ivanov@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о скидке и предоставление email",
+      "id": 265
+    },
+    {
+      "text": "Скидка возможна, но не более 5%. Нужно ли оформлять КАСКО? Полис ОМС не требуется.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение скидки и страховки",
+      "id": 266
+    },
+    {
+      "text": "Давайте оформим КАСКО. Какой документ нужен? Паспорт или СНИЛС?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о необходимых документах",
+      "id": 267
+    },
+    {
+      "text": "Нужен паспорт. Серия 61 02, номер 123456. И ИНН, если есть.",
+      "entities": [
+        {
+          "start": 6,
+          "end": 13,
+          "type": "DOCUMENT",
+          "text": "паспорт"
+        }
+      ],
+      "has_pd": true,
+      "description": "Требуемые документы для оформления",
+      "id": 268
+    },
+    {
+      "text": "Мой ИНН 616102345678. Всё, оформили?",
+      "entities": [
+        {
+          "start": 8,
+          "end": 20,
+          "type": "INN",
+          "text": "616102345678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление ИНН",
+      "id": 269
+    },
+    {
+      "text": "Да, всё готово. Машина ваша. Госномер А 123 АА 61.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Передача машины",
+      "id": 270
+    },
+    {
+      "text": "Отлично! Спасибо за сделку. До свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение сделки",
+      "id": 271
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу машины BMW X5. Какой у неё пробег?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о машине",
+      "id": 272
+    },
+    {
+      "text": "Пробег 70 тысяч км. Год выпуска 2020. Цена 1.2 миллиона рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление информации о машине",
+      "id": 273
+    },
+    {
+      "text": "Хорошо, я подумаю. Спасибо за информацию. Мой номер +7 928 765 43 21.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактной информации",
+      "id": 274
+    },
+    {
+      "text": "Обращайтесь! Хорошего дня!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 275
+    },
+    {
+      "text": "Здравствуйте! Я ищу машину с пробегом. Есть ли у вас Hyundai Solaris?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о наличии машины",
+      "id": 276
+    },
+    {
+      "text": "Да, есть Solaris. Пробег 30 тысяч км. Цена 800 тысяч рублей.",
+      "entities": [
+        {
+          "start": 24,
+          "end": 36,
+          "type": "CAR_INFO",
+          "text": " 30 тысяч км"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление информации о машине",
+      "id": 277
+    },
+    {
+      "text": "Отлично! Я приеду завтра на тест-драйв. Меня зовут Сергей.",
+      "entities": [
+        {
+          "start": 51,
+          "end": 57,
+          "type": "PERSON",
+          "text": "Сергей"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запись на тест-драйв",
+      "id": 278
+    },
+    {
+      "text": "Хорошо, Сергей. Ждём вас завтра. Если что, позвоним на +7 900 123 45 67.",
+      "entities": [
+        {
+          "start": 8,
+          "end": 14,
+          "type": "PERSON",
+          "text": "Сергей"
+        }
+      ],
+      "has_pd": true,
+      "description": "Подтверждение записи",
+      "id": 279
+    },
+    {
+      "text": "Машина в хорошем состоянии. VIN XW8JD8JDW888888. Цена 450 тысяч.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о машине",
+      "id": 280
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я звоню насчёт записи на приём к врачу в вашу клинику на Петроградской стороне. - Да, конечно! Какой врач вам нужен? - Терапевт. - Хорошо, есть свободные записи на следующей неделе. Ваш номер телефона, пожалуйста? - +7 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на приём к врачу",
+      "id": 281
+    },
+    {
+      "text": "Привет! Мне нужно записаться на анализ крови в вашей лаборатории на Московском проспекте. - Окей, какой день вам подойдёт? - Завтра или послезавтра. - Хорошо, у нас есть слот завтра в 10 утра. Ваш email, пожалуйста, для отправки результатов? - ivanov@mail.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на анализ крови",
+      "id": 282
+    },
+    {
+      "text": "Здравствуйте! Я звоню, чтобы узнать результаты моего теста на COVID-19. - Да, конечно! Ваш паспорт, пожалуйста? - 40 12 345678. - Хорошо, вижу ваши результаты... они отрицательные.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты теста на COVID-19",
+      "id": 283
+    },
+    {
+      "text": "Добрый день! Я ищу информацию о вашем пакете медицинских услуг. - Да, конечно! Наш пакет включает в себя полное медицинское обследование. - Хорошо, а сколько это стоит? - 15 тысяч рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинских услугах",
+      "id": 284
+    },
+    {
+      "text": "Привет! Мне нужно записаться к стоматологу в вашей клинике на Гражданском проспекте. - Окей, когда вам удобно? - Сегодня или завтра. - Есть слот сегодня в 16:00. Ваше имя, пожалуйста? - Анна.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись к стоматологу",
+      "id": 285
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего полиса ОМС. - Да, какой у вас вопрос? - Хочу узнать, покрывает ли он данную процедуру? - Да, покрывает. Ваш номер полиса, пожалуйста? - 1234567890123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о полисе ОМС",
+      "id": 286
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим новым медицинским центром на Дворцовой площади. - Да, мы недавно открыли новый центр. - Какие услуги вы предоставляете? - Полный спектр медицинских услуг.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском центре",
+      "id": 287
+    },
+    {
+      "text": "Привет! Мне нужно записаться на приём к кардиологу. - Окей, когда вам удобно? - На следующей неделе. - Есть слот в понедельник. Ваше ФИО, пожалуйста? - Петров Иван Сергеевич.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на приём к кардиологу",
+      "id": 288
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт результатов моего УЗИ. - Да, ваш результат... отрицательный. - Хорошо, спасибо!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты УЗИ",
+      "id": 289
+    },
+    {
+      "text": "Добрый день! Я интересуюсь стоимостью вашей услуги по вакцинации от гриппа. - Да, стоимость 1500 рублей. - Хорошо, как можно записаться? - Позвоните нам или запишитесь онлайн, указав ваше имя и номер телефона.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о вакцинации",
+      "id": 290
+    },
+    {
+      "text": "Привет! Мне нужно узнать мой СНИЛС. - Окей, какой у вас вопрос? - Забыл номер. - Хорошо, ваш СНИЛС... 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о СНИЛС",
+      "id": 291
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего ИНН. - Да, какой у вас вопрос? - Нужно узнать ИНН для налоговой декларации. - Хорошо, ваш ИНН... 123456789012.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос об ИНН",
+      "id": 292
+    },
+    {
+      "text": "Добрый день! Я ищу информацию о вашем медицинском оборудовании. - Да, у нас современное оборудование. - Какие модели вы используете? - Мы используем Philips и Siemens.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском оборудовании",
+      "id": 293
+    },
+    {
+      "text": "Привет! Мне нужно записаться на консультацию к неврологу. - Окей, когда вам удобно? - Сегодня. - Есть слот в 18:00. Ваше имя и телефон, пожалуйста? - Сергей, +7 921 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на консультацию к неврологу",
+      "id": 294
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего банковского счета для оплаты медицинских услуг. - Да, какой у вас вопрос? - Как узнать остаток? - Вы можете проверить в вашем интернет-банке или позвонить в поддержку.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о банковском счете",
+      "id": 295
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим новым сервисом телемедицины. - Да, мы запустили его недавно. - Как это работает? - Вы можете консультироваться с врачами онлайн.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о телемедицине",
+      "id": 296
+    },
+    {
+      "text": "Привет! Мне нужно записаться на МРТ. - Окей, когда вам удобно? - Завтра. - Есть слот в 11:00. Ваш номер карты, пожалуйста? - 1234 5678 9012 3456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на МРТ",
+      "id": 297
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего диагноза. - Да, какой у вас вопрос? - Хочу узнать больше о моём состоянии. - Хорошо, ваш диагноз... гипертония.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о диагнозе",
+      "id": 298
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим медицинским центром на Невском проспекте. - Да, мы находимся там. - Какие услуги вы предоставляете? - Мы оказываем широкий спектр медицинских услуг.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском центре",
+      "id": 299
+    },
+    {
+      "text": "Привет! Мне нужно узнать результаты моего теста на ковид. - Окей, ваш результат... отрицательный. - Хорошо, спасибо! Мой номер теста 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты теста на ковид",
+      "id": 300
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена Сергеевна. Я звоню из университета УрФУ. Мы проводим набор на курс по программированию. Вас интересует данное направление? - Да, интересует. Мне посоветовали ваш курс друзья. - Хорошо, давайте обсудим детали. Какой у вас возраст? - Мне 22 года. - Отлично, вы подходите под наши условия. Нужно будет предоставить паспортные данные для регистрации. - Хорошо, моя серия и номер паспорта 65 01 123456. - Отлично, мы вас запишем. Ожидайте подтверждения на почту elena.ivanova@mail.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о записи на курсы в университете с упоминанием персональных данных",
+      "id": 301
+    },
+    {
+      "text": "Привет! Ты записался на курсы английского? - Да, записался. Буду учить с нуля. - Классно! Я тоже хочу записаться. Как тебя зовут? - Меня зовут Ваня. А тебя? - Катя. Какой у тебя телефон? - +7 912 345 67 89.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Неформальный разговор о курсах английского языка",
+      "id": 302
+    },
+    {
+      "text": "Здравствуйте! Я звоню из школы №13. Ваш сын, Сергей, пропустил занятия по математике. Нужно подтянуть алгебру. - Да, я в курсе. Спасибо за звонок. Какой у него возраст? - 15 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из школы о пропущенных занятиях",
+      "id": 303
+    },
+    {
+      "text": "Добрый день! Меня зовут Мария. Я менеджер по продажам в компании \"Уральский университет\". Мы проводим набор на подготовительные курсы. - Здравствуйте! Интересует. Как можно записаться? - Нужно прийти в наш офис на Ленина, 51.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о подготовительных курсах в университете",
+      "id": 304
+    },
+    {
+      "text": "Привет, это Саша. Я забыл свой номер СНИЛС. Ты не знаешь, где он написан? - Да, на твоей карте участника он есть. 123-456-789 12.",
+      "entities": [
+        {
+          "start": 12,
+          "end": 16,
+          "type": "PERSON",
+          "text": "Саша"
+        }
+      ],
+      "has_pd": true,
+      "description": "Разговор о номере СНИЛС",
+      "id": 305
+    },
+    {
+      "text": "Здравствуйте! Я звоню из банка. Мы проводим акцию для держателей наших карт. У вас есть карта МИР? - Да, есть. - Отлично, мы пришлем вам предложение на почту.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из банка об акции для держателей карт",
+      "id": 306
+    },
+    {
+      "text": "Добрый день! Я хочу узнать о поступлении в УрГЭУ. Какие проходные баллы? - Здравствуйте! Проходные баллы зависят от специальности. Могу прислать вам информацию на почту.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о поступлении в университет",
+      "id": 307
+    },
+    {
+      "text": "Привет! Как тебя зовут? - Привет! Меня зовут Оля. А тебя? - Дима. Хочу записаться на курсы по Python. - Отлично, у нас есть такая программа.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Неформальный разговор о курсах программирования",
+      "id": 308
+    },
+    {
+      "text": "Здравствуйте! Я звоню из регистратуры городской больницы. Нам нужен ваш СНИЛС для подтверждения записи. - Хорошо, мой СНИЛС 098-765-432 11.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из больницы с просьбой подтвердить СНИЛС",
+      "id": 309
+    },
+    {
+      "text": "Добрый день! Я интересуюсь курсами по повышению квалификации. Что вы можете предложить? - У нас есть различные программы. Давайте обсудим детали. Какой у вас опыт работы? - 5 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о курсах повышения квалификации",
+      "id": 310
+    },
+    {
+      "text": "Привет! Ты будешь на встрече выпускников? - Да, буду. Когда она? - В следующую субботу на площади 1905 года.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о встрече выпускников",
+      "id": 311
+    },
+    {
+      "text": "Здравствуйте! Я звоню из налоговой инспекции. Нам нужен ваш ИНН для проверки. - Хорошо, мой ИНН 665601234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из налоговой инспекции с просьбой предоставить ИНН",
+      "id": 312
+    },
+    {
+      "text": "Добрый день! Я хочу узнать о стоимости обучения в УрФУ. - Здравствуйте! Стоимость зависит от направления. Могу прислать вам информацию на email.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о стоимости обучения в университете",
+      "id": 313
+    },
+    {
+      "text": "Привет! Как дела? - Привет! Все хорошо. Собираюсь поступать в магистратуру. - Поздравляю! В какой вуз? - В УрГУПС.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о поступлении в магистратуру",
+      "id": 314
+    },
+    {
+      "text": "Здравствуйте! Я звоню из пенсионного фонда. Нам нужен ваш номер телефона для подтверждения данных. - Хорошо, мой номер +7 922 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок из пенсионного фонда с просьбой подтвердить номер телефона",
+      "id": 315
+    },
+    {
+      "text": "Добрый день! Я интересуюсь получением стипендии. Какие условия? - Нужно иметь средний балл не ниже 4.5 и справку о доходах родителей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор об условиях получения стипендии",
+      "id": 316
+    },
+    {
+      "text": "Привет! Ты записался на курсы вождения? - Да, записался. Буду сдавать на права категории B. - Удачи! Мне нужно было получить права категории C.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о курсах вождения и категориях прав",
+      "id": 317
+    },
+    {
+      "text": "Здравствуйте! Я звоню из университета. Мы проводим опрос среди студентов. Какой у вас возраст? - 20 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Опрос среди студентов университета",
+      "id": 318
+    },
+    {
+      "text": "Добрый день! Я хочу узнать о возможности перевода в другой вуз. - Здравствуйте! Это возможно при наличии свободных мест.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о переводе в другой вуз",
+      "id": 319
+    },
+    {
+      "text": "Привет! Ты будешь на лекции по истории? - Да, буду. Она будет в ауд. 304 на Ленина, 51. - Отлично, увидимся!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о лекции в университете",
+      "id": 320
+    },
+    {
+      "text": "Здравствуйте меня завут Иван Иванович я хачу купить квартмру в Ростове на Дону на улице Ленина",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку квартиры",
+      "id": 321
+    },
+    {
+      "text": "Меня интересует двухкомнатная квартира в районе Театральной площади мой телефон 89001234567",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к двухкомнатной квартире",
+      "id": 322
+    },
+    {
+      "text": "Я менеджер компании Ростов Недвижимость мой email ivanov@rostovned.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представление менеджера",
+      "id": 323
+    },
+    {
+      "text": "Кадастровый номер участка 61:12:123456:789",
+      "entities": [],
+      "has_pd": false,
+      "description": "Уточнение кадастрового номера",
+      "id": 324
+    },
+    {
+      "text": "Мне нужно оформить договор купли продажи мой снилс 123-456-789 12",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание СНИЛС",
+      "id": 325
+    },
+    {
+      "text": "Здравствуйте я хочу узнать про квартиру на улице Пушкинской",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о квартире",
+      "id": 326
+    },
+    {
+      "text": "Мой паспорт серия 61 02 номер 123456 выдан в Ростове",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание паспортных данных",
+      "id": 327
+    },
+    {
+      "text": "Цена квартиры 5 миллионов рублей",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение цены",
+      "id": 328
+    },
+    {
+      "text": "Моя банковская карта номер 2200 1234 5678 9012",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание номера банковской карты",
+      "id": 329
+    },
+    {
+      "text": "Я родился в 1990 году мне сейчас 33 года",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание возраста",
+      "id": 330
+    },
+    {
+      "text": "Госномер моего автомобиля а 123 аа 61",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание госномера автомобиля",
+      "id": 331
+    },
+    {
+      "text": "Я работаю в компании РостовАвто мой инн 616102345678",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание ИНН организации",
+      "id": 332
+    },
+    {
+      "text": "Модель телефона iPhone 14 Pro Max",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на модели техники",
+      "id": 333
+    },
+    {
+      "text": "Я учусь в Южном Федеральном Университете",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание учебного заведения",
+      "id": 334
+    },
+    {
+      "text": "Мой отец Петя ему 55 лет",
+      "entities": [
+        {
+          "start": 9,
+          "end": 13,
+          "type": "PERSON",
+          "text": "Петя"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "type": "AGE",
+          "text": "55"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание члена семьи",
+      "id": 335
+    },
+    {
+      "text": "Я проживаю в районе Западного жилого массива",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение района проживания",
+      "id": 336
+    },
+    {
+      "text": "Меня зовут Мария Ивановна мой телефон 8 918 123 45 67",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактной информации",
+      "id": 337
+    },
+    {
+      "text": "Квартира находится на 5 этаже в доме номер 12",
+      "entities": [],
+      "has_pd": false,
+      "description": "Описание квартиры",
+      "id": 338
+    },
+    {
+      "text": "Мой email address mariya@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание email адреса",
+      "id": 339
+    },
+    {
+      "text": "VIN номер автомобиля XWXXXXXXXXXXXXXXX",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание VIN номера автомобиля",
+      "id": 340
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Иванович. Я звоню по поводу автомобиля Toyota Camry 2018 года. Пробег 50 тысяч км. Хозяин продает, звонить +7 921 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о продаже автомобиля",
+      "id": 341
+    },
+    {
+      "text": "Привет! Хочу продать свой BMW X5. Год выпуска 2020, пробег 20 тысяч. Мой номер 8921 765 43 21.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 342
+    },
+    {
+      "text": "Добрый день! Интересует цена на Hyundai Solaris. Email для связи: example@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос цены на автомобиль",
+      "id": 343
+    },
+    {
+      "text": "Здравствуйте! Хочу узнать о возможности тест-драйва Kia Rio. Звоните +7 911 234 56 78.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о тест-драйве",
+      "id": 344
+    },
+    {
+      "text": "Привет! Продаю свой старый Nissan Qashqai 2015 года. Пробег 80 тысяч. Свяжитесь со мной по номеру 8 921 345 67 89.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа подержанного автомобиля",
+      "id": 345
+    },
+    {
+      "text": "Добрый день! Интересует комплектация Volkswagen Polo. Можете прислать на почту ivan@example.com",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос комплектации автомобиля",
+      "id": 346
+    },
+    {
+      "text": "Здравствуйте! Я менеджер автосалона. Звоните +7 921 456 78 90 для подробностей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Приглашение от менеджера автосалона",
+      "id": 347
+    },
+    {
+      "text": "Привет! Хочу купить подержанный Ford Focus. Есть ли у вас варианты? Email: buyer@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск подержанного автомобиля",
+      "id": 348
+    },
+    {
+      "text": "Добрый день! Интересует стоимость страховки КАСКО для Mazda 3. Мой телефон 8 911 567 89 01.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости страховки",
+      "id": 349
+    },
+    {
+      "text": "Здравствуйте! Я продаю свой Renault Logan 2012 года. Пробег 120 тысяч. Звоните 8921 678 90 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа старого автомобиля",
+      "id": 350
+    },
+    {
+      "text": "Привет! Хочу узнать о наличии Subaru Outback. Свяжитесь со мной по email: subaru_fan@gmail.com",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о наличии автомобиля",
+      "id": 351
+    },
+    {
+      "text": "Добрый день! Интересует цена на Mercedes-Benz E-Class. Можете позвонить мне на номер +7 921 789 01 23.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос цены на автомобиль",
+      "id": 352
+    },
+    {
+      "text": "Здравствуйте! Я ищу автомобиль в кредит. Можете прислать условия на почту: kredit@example.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос условий кредита",
+      "id": 353
+    },
+    {
+      "text": "Привет! Продаю свой старый мотоцикл. Документы в порядке. Звоните 8 911 890 12 34.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа мотоцикла",
+      "id": 354
+    },
+    {
+      "text": "Добрый день! Хочу узнать о тест-драйве Audi A4. Номер для связи: +7 921 901 23 45.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос тест-драйва",
+      "id": 355
+    },
+    {
+      "text": "Здравствуйте! Интересует наличие Skoda Octavia. Свяжитесь со мной по телефону 8921 012 34 56.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос наличия автомобиля",
+      "id": 356
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль быстро. Номер телефона: 8 911 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля",
+      "id": 357
+    },
+    {
+      "text": "Добрый день! Интересует комплектация Honda Civic. Email для связи: honda_civic@example.com",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос комплектации автомобиля",
+      "id": 358
+    },
+    {
+      "text": "Здравствуйте! Я покупатель из Санкт-Петербурга. Интересует Toyota RAV4. Звоните +7 921 234 56 78.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля",
+      "id": 359
+    },
+    {
+      "text": "Привет! Хочу узнать о стоимости страховки ОСАГО для моего автомобиля. Спасибо!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости страховки без ПД",
+      "id": 360
+    },
+    {
+      "text": "Привет, меня зовут Иван. Я звоню насчёт кредита. У меня есть паспорт серии 4607 номер 123456, выдан ОУФМС России по г. Москве. Как можно получить кредит?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на получение кредита",
+      "id": 361
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Елена Васильевна. Я хотела бы узнать о возможности рефинансирования моего текущего кредита. Мой номер телефона +7 916 789 01 23.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на рефинансирование кредита",
+      "id": 362
+    },
+    {
+      "text": "Добрый день! Я рассматриваю возможность открытия вклада. Какой минимальный срок депозита?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о депозитах",
+      "id": 363
+    },
+    {
+      "text": "Здравствуйте! Я хочу открыть счёт для ИП. Мой ИНН 503215672890. Какие документы нужны?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Открытие счета для ИП",
+      "id": 364
+    },
+    {
+      "text": "Привет! Я звоню, чтобы узнать о состоянии моего счета. Номер моей карты 4276 3800 1234 5678.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос состояния счета",
+      "id": 365
+    },
+    {
+      "text": "Добрый день! Я интересуюсь кредитными предложениями для физических лиц. Какой процент?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о кредитах",
+      "id": 366
+    },
+    {
+      "text": "Здравствуйте! Я хочу перевести деньги на карту Сбербанка. Номер карты 5469 3000 9876 5432.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Перевод на карту Сбербанка",
+      "id": 367
+    },
+    {
+      "text": "Привет! Мне нужна информация о моем СНИЛС. Номер СНИЛС 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о СНИЛС",
+      "id": 368
+    },
+    {
+      "text": "Добрый день! Я рассматриваю возможность покупки страховки. Какие условия?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о страховке",
+      "id": 369
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего заявления на кредит. Номер заявления 12345 от 01.01.2023.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о состоянии заявления",
+      "id": 370
+    },
+    {
+      "text": "Привет! Я хочу узнать о возможности получения ипотеки. Мой возраст 32 года.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос об ипотеке",
+      "id": 371
+    },
+    {
+      "text": "Добрый день! Я интересуюсь условиями автокредита. Какой первоначальный взнос?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автокредите",
+      "id": 372
+    },
+    {
+      "text": "Здравствуйте! Я хочу зачислить деньги на счет. Мой номер счета 40817810012345678900.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Зачисление на счет",
+      "id": 373
+    },
+    {
+      "text": "Привет! Я звоню насчёт процентной ставки по депозиту. Какой процент?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о депозите",
+      "id": 374
+    },
+    {
+      "text": "Добрый день! Я рассматриваю возможность оформления кредитной карты. Какие требования?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о кредитной карте",
+      "id": 375
+    },
+    {
+      "text": "Здравствуйте! Я хочу узнать о состоянии моего кредитного договора. Номер договора КР-001234.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о состоянии кредитного договора",
+      "id": 376
+    },
+    {
+      "text": "Привет! Мне нужно подтвердить личность. Мой паспорт серии 4501 номер 987654.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение личности",
+      "id": 377
+    },
+    {
+      "text": "Добрый день! Я интересуюсь возможностью реструктуризации долга. Какой порядок действий?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о реструктуризации долга",
+      "id": 378
+    },
+    {
+      "text": "Здравствуйте! Я хочу узнать о комиссии за перевод. Мой email example@yandex.ru.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о комиссии за перевод",
+      "id": 379
+    },
+    {
+      "text": "Привет! Я звоню насчёт условий потребительского кредита. Какой максимальный срок?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о потребительском кредите",
+      "id": 380
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я звоню по поводу проблемы с интернетом. Мой номер +7 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обращение в техподдержку с проблемой интернета",
+      "id": 381
+    },
+    {
+      "text": "Привет! У меня не работает приложение. Логин: user123, пароль: qwerty.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с приложением, указаны логин и пароль",
+      "id": 382
+    },
+    {
+      "text": "Здравствуйте! Я проживаю по адресу: Москва, ул. Ленина, д. 5, кв. 12. У меня проблема с кабельным телевидением.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с кабельным телевидением, указан адрес",
+      "id": 383
+    },
+    {
+      "text": "Меня зовут Анна. Мне 25 лет. У меня не работает интернет.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 15,
+          "type": "PERSON",
+          "text": "Анна"
+        }
+      ],
+      "has_pd": true,
+      "description": "Проблема с интернетом, указана имя и возраст",
+      "id": 384
+    },
+    {
+      "text": "Здравствуйте! Номер моего договора 12345. У меня проблема с оборудованием.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с оборудованием, без персональных данных",
+      "id": 385
+    },
+    {
+      "text": "Привет! Я купил iPhone 14 Pro Max. У меня проблема с настройкой.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с настройкой iPhone, ложное срабатывание",
+      "id": 386
+    },
+    {
+      "text": "Меня зовут Сергей. Мой email: sergey@mail.ru. У меня проблема с почтой.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 17,
+          "type": "PERSON",
+          "text": "Сергей"
+        }
+      ],
+      "has_pd": true,
+      "description": "Проблема с почтой, указаны имя и email",
+      "id": 387
+    },
+    {
+      "text": "Здравствуйте! Я проживаю в Москве, район Сокольники. У меня проблема с цифровым телевидением.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с цифровым телевидением, указан район проживания",
+      "id": 388
+    },
+    {
+      "text": "Привет! У меня не работает банковская карта 4276 1234 5678 9012.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с банковской картой, указан номер карты",
+      "id": 389
+    },
+    {
+      "text": "Меня зовут Елена Васильевна. Мой СНИЛС: 123-456-789 12. У меня вопрос по начислению пенсии.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос по начислению пенсии, указаны имя и СНИЛС",
+      "id": 390
+    },
+    {
+      "text": "Здравствуйте! У меня проблема с доступом к личному кабинету. Логин: elena, пароль: 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с доступом к личному кабинету, указаны логин и пароль",
+      "id": 391
+    },
+    {
+      "text": "Привет! Я пользуюсь услугой IPTV. У меня не показывает канал 'Первый канал'.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с IPTV, без персональных данных",
+      "id": 392
+    },
+    {
+      "text": "Меня зовут Иван Иванович. Мой паспорт: серия 45 01, номер 123456. У меня вопрос по оформлению услуги.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос по оформлению услуги, указаны имя и паспортные данные",
+      "id": 393
+    },
+    {
+      "text": "Здравствуйте! У меня проблема с маршрутизатором. MAC-адрес: 00:11:22:33:44:55.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с маршрутизатором, указан MAC-адрес как ложное срабатывание",
+      "id": 394
+    },
+    {
+      "text": "Привет! Я живу на Садовом кольце. У меня не работает интернет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с интернетом, указан ориентир",
+      "id": 395
+    },
+    {
+      "text": "Меня зовут Ольга. Мой ИНН: 123456789012. У меня вопрос по налоговому вычету.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос по налоговому вычету, указаны имя и ИНН",
+      "id": 396
+    },
+    {
+      "text": "Здравствуйте! У меня проблема с оплатой. Номер счета: 1234567890.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с оплатой, указан номер счета",
+      "id": 397
+    },
+    {
+      "text": "Привет! Я купил новый телевизор Samsung. У меня проблема с подключением.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с подключением телевизора, ложное срабатывание",
+      "id": 398
+    },
+    {
+      "text": "Меня зовут Дмитрий. Мой номер телефона: 8 926 123 45 67. У меня вопрос по услуге.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 18,
+          "type": "PERSON",
+          "text": "Дмитрий"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос по услуге, указаны имя и номер телефона",
+      "id": 399
+    },
+    {
+      "text": "Здравствуйте! У меня проблема с доступом к сайту. IP-адрес: 192.168.0.1.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Проблема с доступом к сайту, указан IP-адрес как ложное срабатывание",
+      "id": 400
+    },
+    {
+      "text": "Здравствуйте, меня зовут Иван Иванович. Я звоню по поводу квартиры на Ленинском проспекте, 23. Хочу узнать подробности.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о квартире",
+      "id": 401
+    },
+    {
+      "text": "Добрый день! Квартира продается. Цена 15 миллионов рублей. Меня зовут Елена Васильевна.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ с информацией о продаже",
+      "id": 402
+    },
+    {
+      "text": "Меня интересует двухкомнатная квартира в районе метро Сокольники. Какой этаж?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о характеристиках квартиры",
+      "id": 403
+    },
+    {
+      "text": "Третий этаж, площадь 65 кв.м. Кадастровый номер 77:01:0001001:1001.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ с характеристиками квартиры",
+      "id": 404
+    },
+    {
+      "text": "Хорошо, а документы готовы? Нужен ли СНИЛС для сделки?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о документах",
+      "id": 405
+    },
+    {
+      "text": "Да, все документы в порядке. СНИЛС не требуется.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ о готовности документов",
+      "id": 406
+    },
+    {
+      "text": "Могу ли я получить выписку из ЕГРН?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос выписки из ЕГРН",
+      "id": 407
+    },
+    {
+      "text": "Да, конечно. Ваш email для отправки?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос email",
+      "id": 408
+    },
+    {
+      "text": "Мой email: ivanov@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление email",
+      "id": 409
+    },
+    {
+      "text": "Отлично, отправим. Ваш телефон для связи?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос телефона",
+      "id": 410
+    },
+    {
+      "text": "Мой номер: +7 916 123 45 67",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление телефона",
+      "id": 411
+    },
+    {
+      "text": "Хорошо, мы свяжемся. Всего доброго!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 412
+    },
+    {
+      "text": "До свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 413
+    },
+    {
+      "text": "Здравствуйте, я звоню насчёт квартиры на улице Вавилова. Мне сказали, что она стоит 12 миллионов.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о квартире",
+      "id": 414
+    },
+    {
+      "text": "Да, это так. Квартира трёхкомнатная, 120 кв.м.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о квартире",
+      "id": 415
+    },
+    {
+      "text": "А где находится договор купли-продажи?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о договоре",
+      "id": 416
+    },
+    {
+      "text": "Договор будет составлен после проверки документов.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 7,
+          "type": "DOCUMENT",
+          "text": "Договор"
+        }
+      ],
+      "has_pd": true,
+      "description": "Информация о договоре",
+      "id": 417
+    },
+    {
+      "text": "Мне нужно показать паспорт для сделки?",
+      "entities": [
+        {
+          "start": 19,
+          "end": 26,
+          "type": "DOCUMENT",
+          "text": "паспорт"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос о паспорте",
+      "id": 418
+    },
+    {
+      "text": "Да, паспорт и СНИЛС необходимы.",
+      "entities": [
+        {
+          "start": 4,
+          "end": 11,
+          "type": "DOCUMENT",
+          "text": "паспорт"
+        }
+      ],
+      "has_pd": true,
+      "description": "Информация о необходимых документах",
+      "id": 419
+    },
+    {
+      "text": "Хорошо, я подготовлю. Спасибо за информацию.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 420
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я звоню по поводу покупки автомобиля BMW X5. Мой номер +7 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 421
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Toyota Camry 2018 года. Пробег 50 тысяч км. Цена 1.2 миллиона рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 422
+    },
+    {
+      "text": "Меня зовут Анна. Я хочу записаться на тест-драйв автомобиля Hyundai Solaris. Мой email: anna@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на тест-драйв",
+      "id": 423
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт автомобиля Lada Granta. Мой телефон 8 920 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос об автомобиле",
+      "id": 424
+    },
+    {
+      "text": "Добрый день! Я интересуюсь условиями кредита на автомобиль Kia Rio.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о кредите",
+      "id": 425
+    },
+    {
+      "text": "Меня зовут Сергей. Мой СНИЛС 123-456-789 12. Я хочу купить автомобиль Mazda 3.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля с указанием СНИЛС",
+      "id": 426
+    },
+    {
+      "text": "Здравствуйте! Я хочу узнать о стоимости автомобиля Volkswagen Polo. Мой номер +7 903 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости автомобиля",
+      "id": 427
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Renault Logan. Год выпуска 2015, пробег 70 тысяч км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 428
+    },
+    {
+      "text": "Меня зовут Елена Васильевна. Мой паспорт серия 52 11 номер 123456. Я хочу купить автомобиль Skoda Rapid.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля с указанием паспортных данных",
+      "id": 429
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу автомобиля Nissan Qashqai. Мой email: ivanov@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос об автомобиле",
+      "id": 430
+    },
+    {
+      "text": "Добрый день! Я интересуюсь условиями страхования автомобиля Ford Focus.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о страховании",
+      "id": 431
+    },
+    {
+      "text": "Меня зовут Ольга. Мой телефон +7 916 789 01 23. Я хочу записаться на тест-драйв автомобиля Honda Civic.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на тест-драйв",
+      "id": 432
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт автомобиля Lada Vesta. Мой VIN номер ABC1234567890.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос об автомобиле с VIN номером",
+      "id": 433
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Hyundai Elantra. Год выпуска 2019, пробег 20 тысяч км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 434
+    },
+    {
+      "text": "Меня зовут Дмитрий. Мой СНИЛС 987-654-321 99. Я хочу купить автомобиль Toyota Corolla.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля с указанием СНИЛС",
+      "id": 435
+    },
+    {
+      "text": "Здравствуйте! Я хочу узнать о стоимости автомобиля Kia Ceed. Мой номер 8 920 765 43 21.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости автомобиля",
+      "id": 436
+    },
+    {
+      "text": "Добрый день! Я интересуюсь условиями лизинга автомобиля Volkswagen Golf.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о лизинге",
+      "id": 437
+    },
+    {
+      "text": "Меня зовут Наталья. Мой email: natalya@gmail.com. Я хочу записаться на тест-драйв автомобиля Mazda CX-5.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись на тест-драйв",
+      "id": 438
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт автомобиля Renault Duster. Мой телефон +7 903 456 78 90.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос об автомобиле",
+      "id": 439
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Skoda Octavia. Год выпуска 2020, пробег 10 тысяч км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация об автомобиле",
+      "id": 440
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я звоню по поводу покупки автомобиля BMW X5. Мой номер +7 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку автомобиля",
+      "id": 441
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Toyota Camry 2020 года. VIN номер: JTNBF4U2XJ554321. Свяжитесь со мной по email: example@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к автомобилю с указанием VIN",
+      "id": 442
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль ВАЗ 2110. Номер госрегистрации: А123АА161. Звоните +79001234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля с госномером",
+      "id": 443
+    },
+    {
+      "text": "Здравствуйте! Я менеджер автосалона. Мои координаты: +7(863) 123-45-67, email: manager@avtosalon.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Контактная информация менеджера",
+      "id": 444
+    },
+    {
+      "text": "Добрый день! Хочу узнать о возможности покупки автомобиля в кредит. Мой СНИЛС: 123-456-789 12.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на покупку в кредит с указанием СНИЛС",
+      "id": 445
+    },
+    {
+      "text": "Здравствуйте! Я интересуюсь автомобилем Hyundai Solaris. Пробег 50 тыс. км, 2015 год выпуска.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к автомобилю без ПД",
+      "id": 446
+    },
+    {
+      "text": "Привет! Хочу продать свой мотоцикл. Госномер: М001ММ161. Обращайтесь по телефону 89001234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа мотоцикла с госномером",
+      "id": 447
+    },
+    {
+      "text": "Добрый день! Я рассматриваю покупку автомобиля Kia Rio. VIN: Z94CB41D0HR123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к автомобилю с VIN",
+      "id": 448
+    },
+    {
+      "text": "Здравствуйте! Хочу узнать о страховке ОСАГО. Мой номер полиса: ААА123456789.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на страховку ОСАГО",
+      "id": 449
+    },
+    {
+      "text": "Привет! Продаю свой автомобиль Ford Focus. Цвет черный, 2012 год, пробег 120 тыс. км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля без ПД",
+      "id": 450
+    },
+    {
+      "text": "Добрый день! Я хочу купить автомобиль в автосалоне на улице Ленина, 123. ИНН салона: 616301001.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля с ИНН салона",
+      "id": 451
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Анна Ивановна. Я звоню по поводу автомобиля Mazda 3. Мой телефон: 8 918 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на автомобиль с указанием имени и телефона",
+      "id": 452
+    },
+    {
+      "text": "Привет! Хочу узнать о стоимости автомобиля Volkswagen Polo. VIN: WVWZZZ1KZCW123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на стоимость автомобиля с VIN",
+      "id": 453
+    },
+    {
+      "text": "Добрый день! Я продаю свой прицеп. Номер прицепа: Х001ХХ161. Звоните +79001234567.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа прицепа с номером",
+      "id": 454
+    },
+    {
+      "text": "Здравствуйте! Я рассматриваю покупку автомобиля Renault Logan. Пробег 30 тыс. км, 2018 год.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к автомобилю без ПД",
+      "id": 455
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль Lada Granta. Госномер: В123ВС161. Email: example@mail.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля с госномером и email",
+      "id": 456
+    },
+    {
+      "text": "Добрый день! Я интересуюсь автомобилем Skoda Octavia. VIN номер: TMBJZ7NEXG8123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к автомобилю с VIN",
+      "id": 457
+    },
+    {
+      "text": "Здравствуйте! Хочу узнать о возможности тест-драйва автомобиля Nissan Qashqai. Мой телефон: +7 928 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на тест-драйв с указанием телефона",
+      "id": 458
+    },
+    {
+      "text": "Привет! Продаю свой автомобиль Honda Civic. Цвет серебристый, 2016 год, пробег 80 тыс. км.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Продажа автомобиля без ПД",
+      "id": 459
+    },
+    {
+      "text": "Добрый день! Я хочу купить автомобиль в салоне на проспекте Соколова, 123. Email: buyer@gmail.com",
+      "entities": [],
+      "has_pd": false,
+      "description": "Покупка автомобиля с email",
+      "id": 460
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена Васильевна. Я звоню из клиники МедСевр на улице Восстания, 12. Мы получили ваш запрос на прием к врачу-терапевту Петрову Сергею Николаевичу. Когда вам удобно подойти? Ваш номер телефона +7 921 123-45-67?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на прием к врачу",
+      "id": 461
+    },
+    {
+      "text": "Добрый день! Я хотел бы записаться на прием к стоматологу. Меня зовут Константин, фамилия моя - Михайлов. Удобно ли прийти завтра к 10 утра? Моя почта kmikhaylov@yandex.ru",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись к стоматологу",
+      "id": 462
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет результатов анализа крови. Моя фамилия Смирнова, имя Ольга. Дата рождения 12.05.1987. Врач сказала, что все в порядке.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты анализа крови",
+      "id": 463
+    },
+    {
+      "text": "Привет! Нужно записаться к терапевту. У меня полис ОМС номер 45 12 34567890. Когда есть запись?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запись к терапевту с полисом ОМС",
+      "id": 464
+    },
+    {
+      "text": "Добрый день! Я менеджер клиники на Невском, 140. Мы предлагаем услуги МРТ. Интересует?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Реклама услуг МРТ",
+      "id": 465
+    },
+    {
+      "text": "Здравствуйте! Я звоню из регистратуры городской больницы №15. Ваш СНИЛС 123-456-789 12?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос СНИЛС",
+      "id": 466
+    },
+    {
+      "text": "Да, все верно. И еще, у меня есть направление от врача Петровой Ирины Сергеевны.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание врача",
+      "id": 467
+    },
+    {
+      "text": "Отлично! Приходите завтра к 9 утра. Вам нужно прийти с паспортом, серия 40 05, номер 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Требование паспорта",
+      "id": 468
+    },
+    {
+      "text": "Хорошо, спасибо. А что если я опоздаю на 10 минут?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение опоздания",
+      "id": 469
+    },
+    {
+      "text": "Ничего страшного, главное предупредить. Ваш телефон +7(812)345-67-89?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Подтверждение телефона",
+      "id": 470
+    },
+    {
+      "text": "Да, все верно. Спасибо за прием.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Благодарность",
+      "id": 471
+    },
+    {
+      "text": "Здравствуйте! Я хотел бы узнать стоимость услуги анализа на COVID-19. Как можно оплатить?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос стоимости услуги",
+      "id": 472
+    },
+    {
+      "text": "Добрый день! Стоимость 1500 рублей. Оплатить можно картой МИР 2202 2034 1234 5678.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Оплата картой",
+      "id": 473
+    },
+    {
+      "text": "У меня есть карта Visa 4111 1111 1111 1111. Можно ли ей оплатить?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Оплата Visa картой",
+      "id": 474
+    },
+    {
+      "text": "Да, можно. Но есть комиссия 5%.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о комиссии",
+      "id": 475
+    },
+    {
+      "text": "Понятно. Тогда я, возможно, оплачу наличными. Моя фамилия Козлов, имя Алексей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание имени и фамилии",
+      "id": 476
+    },
+    {
+      "text": "Хорошо, ждем вас. При записи указывайте промокод MED123.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на промокод",
+      "id": 477
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет приема к врачу. У меня есть направление. ФИО врача - Васильев Василий Васильевич.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание ФИО врача",
+      "id": 478
+    },
+    {
+      "text": "Отлично! Прием будет у врача-терапевта в клинике на Литейном, 55.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о клинике",
+      "id": 479
+    },
+    {
+      "text": "Хорошо, спасибо за информацию.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Благодарность",
+      "id": 480
+    },
+    {
+      "text": "Привет, меня зовут Иван. Я звоню по поводу квартиры на Ленинском проспекте, 30. Сколько стоит?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости квартиры",
+      "id": 481
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Мария Ивановна. Я хотела бы узнать о возможности покупки двухкомнатной квартиры в районе Сокольники.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к покупке двухкомнатной квартиры",
+      "id": 482
+    },
+    {
+      "text": "Добрый день! Я рассматриваю варианты квартир на продажу в районе метро Университет. Можете показать варианты?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск квартир на продажу",
+      "id": 483
+    },
+    {
+      "text": "Меня зовут Сергей. Мой телефон +7 916 123 45 67. Я хотел бы обсудить детали покупки квартиры на улице Вавилова.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Контактная информация для покупки квартиры",
+      "id": 484
+    },
+    {
+      "text": "Здравствуйте! Я интересуюсь трехкомнатной квартирой в новостройке на Рязанском проспекте. Какой этаж?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Интерес к трехкомнатной квартире",
+      "id": 485
+    },
+    {
+      "text": "Привет! Я Катя. Хочу узнать про квартиру на улице Академика Волгина. Какая площадь?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о площади квартиры",
+      "id": 486
+    },
+    {
+      "text": "Меня зовут Елена Васильевна. Мой email: elena@mail.ru. Я хотела бы получить консультацию по ипотеке.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос консультации по ипотеке",
+      "id": 487
+    },
+    {
+      "text": "Добрый день! Я рассматриваю покупку квартиры в районе Измайлово. Какие варианты?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск вариантов квартир",
+      "id": 488
+    },
+    {
+      "text": "Привет! Мне 30 лет. Я ищу однокомнатную квартиру в центре Москвы. Что можете предложить?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск однокомнатной квартиры",
+      "id": 489
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу квартиры на Ленинском проспекте. Мой паспорт: 4505 123456. Когда можно посмотреть?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление паспортных данных",
+      "id": 490
+    },
+    {
+      "text": "Добрый день! Я интересуюсь квартирой на улице Косыгина. Какой кадастровый номер?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос кадастрового номера",
+      "id": 491
+    },
+    {
+      "text": "Меня зовут Александр. Мой СНИЛС: 123-456-789 12. Я хотел бы узнать о возможности покупки квартиры.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление СНИЛС",
+      "id": 492
+    },
+    {
+      "text": "Привет! Я ищу квартиру в районе метро Проспект Вернадского. Какие есть варианты?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск квартиры",
+      "id": 493
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Ольга. Мой ИНН: 123456789012. Я хотела бы обсудить покупку квартиры.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление ИНН",
+      "id": 494
+    },
+    {
+      "text": "Добрый день! Я рассматриваю покупку квартиры на улице Маршала Жукова. Какой этаж?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о квартире",
+      "id": 495
+    },
+    {
+      "text": "Привет! Я звоню насчет квартиры в районе Бибирево. Мой номер: 8 916 123 45 67.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление контактного номера",
+      "id": 496
+    },
+    {
+      "text": "Здравствуйте! Я интересуюсь покупкой квартиры на Новоясеневском проспекте. Какой метраж?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о метражже квартиры",
+      "id": 497
+    },
+    {
+      "text": "Меня зовут Наталья. Я ищу трехкомнатную квартиру в районе Медведково. Какие варианты?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Поиск трехкомнатной квартиры",
+      "id": 498
+    },
+    {
+      "text": "Привет! Я рассматриваю покупку квартиры на улице Гарибальди. Сколько стоит?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос о стоимости квартиры",
+      "id": 499
+    },
+    {
+      "text": "Добрый день! Меня зовут Дмитрий. Мой email: dmitriy@yandex.ru. Я хотел бы узнать о вариантах квартир.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос вариантов квартир",
+      "id": 500
+    }
+  ]
+}
