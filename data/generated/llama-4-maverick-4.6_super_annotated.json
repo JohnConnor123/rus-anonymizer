@@ -1,0 +1,854 @@
+{
+  "metadata": {
+    "total_dialogs": 50,
+    "generation_timestamp": 1750332431.129046,
+    "model_used": "meta-llama/llama-4-maverick",
+    "parent_dataset": "llama-4-maverick-4",
+    "subset_number": 6,
+    "dialog_range": "251-300",
+    "generation_stats": {
+      "total_generated": 0,
+      "successful_batches": 25,
+      "failed_batches": 0,
+      "total_cost_tokens": 101532,
+      "generation_configs": [
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Казань",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Новосибирск",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "официальный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 71,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "плохое",
+          "communication_style": "официальный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "официальный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Нижний Новгород",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 73,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        }
+      ]
+    },
+    "annotation_timestamp": 1750346117.229848,
+    "annotated": true,
+    "annotation_version": "super_precise_v6.0_manual_corrected",
+    "annotation_stats": {
+      "total_dialogs": 50,
+      "dialogs_with_pd": 32,
+      "pd_percentage": 64.0,
+      "total_entities_found": 52,
+      "entity_types_distribution": {
+        "PERSON": 14,
+        "EMAIL": 3,
+        "PHONE": 6,
+        "INN": 2,
+        "ORGANIZATION": 1,
+        "SNILS": 3,
+        "BANK_CARD": 1,
+        "EDUCATION": 1,
+        "AGE": 3,
+        "POSITION": 1,
+        "VIN_NUMBER": 1,
+        "PASSPORT": 2,
+        "CAR_NUMBER": 1,
+        "MEDICAL": 1,
+        "ADDRESS": 1
+      }
+    }
+  },
+  "dialogs": [
+    {
+      "text": "Какой у вас номер договора?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представитель запрашивает номер договора",
+      "id": 253
+    },
+    {
+      "text": "12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент предоставляет номер договора",
+      "id": 254
+    },
+    {
+      "text": "Спасибо. Мы решим вашу проблему в ближайшее время.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Представитель информирует о решении проблемы",
+      "id": 255
+    },
+    {
+      "text": "Меня зовут Анна. Я хотела бы узнать о статусе моего заказа.",
+      "entities": [
+        {
+          "start": 11,
+          "end": 15,
+          "type": "PERSON",
+          "text": "Анна"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиентка Анна обращается в техподдержку",
+      "id": 256
+    },
+    {
+      "text": "Здравствуйте, Анна. Ваш номер заказа?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка приветствует Анну и запрашивает номер заказа",
+      "id": 257
+    },
+    {
+      "text": "ABC123.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиентка предоставляет номер заказа",
+      "id": 258
+    },
+    {
+      "text": "Хорошо. Мы проверим и свяжемся с вами.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Техподдержка информирует о проверке и обратной связи",
+      "id": 259
+    },
+    {
+      "text": "Спасибо. Жду ответа на мой email anna@yandex.ru.",
+      "entities": [
+        {
+          "start": 33,
+          "end": 47,
+          "type": "EMAIL",
+          "text": "anna@yandex.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиентка благодарит и указывает email для ответа",
+      "id": 260
+    },
+    {
+      "text": "Привет, меня зовут Иван. Я звоню насчёт машины, которую вы продаёте. Можно ли её посмотреть в районе Театральной площади?",
+      "entities": [
+        {
+          "start": 19,
+          "end": 23,
+          "type": "PERSON",
+          "text": "Иван"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос на просмотр машины",
+      "id": 261
+    },
+    {
+      "text": "Да, конечно. Машина находится на улице Пушкинской, 123. VIN номер — XW8JD8JDW777777. Цена 500 тысяч рублей.",
+      "entities": [
+        {
+          "start": 70,
+          "end": 85,
+          "type": "VIN_NUMBER",
+          "text": "XW8JD8JDW777777"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление информации о машине",
+      "id": 262
+    },
+    {
+      "text": "Хорошо, я подъеду завтра. Мой телефон +7 918 123 45 67. Свяжитесь со мной, если что-то изменится.",
+      "entities": [
+        {
+          "start": 38,
+          "end": 54,
+          "type": "PHONE",
+          "text": "+7 918 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление контактной информации",
+      "id": 263
+    },
+    {
+      "text": "Машина в отличном состоянии. Пробег 50 тысяч км. Год выпуска 2018. Цвет — чёрный.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Характеристики машины",
+      "id": 264
+    },
+    {
+      "text": "Можно ли сделать скидку? Я готов купить прямо сейчас. Мой email: ivanov@mail.ru",
+      "entities": [
+        {
+          "start": 65,
+          "end": 79,
+          "type": "EMAIL",
+          "text": "ivanov@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос о скидке и предоставление email",
+      "id": 265
+    },
+    {
+      "text": "Скидка возможна, но не более 5%. Нужно ли оформлять КАСКО? Полис ОМС не требуется.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение скидки и страховки",
+      "id": 266
+    },
+    {
+      "text": "Давайте оформим КАСКО. Какой документ нужен? Паспорт или СНИЛС?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о необходимых документах",
+      "id": 267
+    },
+    {
+      "text": "Нужен паспорт. Серия 61 02, номер 123456. И ИНН, если есть.",
+      "entities": [
+        {
+          "start": 15,
+          "end": 40,
+          "type": "PASSPORT",
+          "text": "Серия 61 02, номер 123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Требуемые документы для оформления",
+      "id": 268
+    },
+    {
+      "text": "Мой ИНН 616102345678. Всё, оформили?",
+      "entities": [
+        {
+          "start": 8,
+          "end": 20,
+          "type": "INN",
+          "text": "616102345678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление ИНН",
+      "id": 269
+    },
+    {
+      "text": "Да, всё готово. Машина ваша. Госномер А 123 АА 61.",
+      "entities": [
+        {
+          "start": 38,
+          "end": 50,
+          "type": "CAR_NUMBER",
+          "text": "А 123 АА 61"
+        }
+      ],
+      "has_pd": true,
+      "description": "Передача машины",
+      "id": 270
+    },
+    {
+      "text": "Отлично! Спасибо за сделку. До свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение сделки",
+      "id": 271
+    },
+    {
+      "text": "Здравствуйте! Я звоню по поводу машины BMW X5. Какой у неё пробег?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о машине",
+      "id": 272
+    },
+    {
+      "text": "Пробег 70 тысяч км. Год выпуска 2020. Цена 1.2 миллиона рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Предоставление информации о машине",
+      "id": 273
+    },
+    {
+      "text": "Хорошо, я подумаю. Спасибо за информацию. Мой номер +7 928 765 43 21.",
+      "entities": [
+        {
+          "start": 52,
+          "end": 68,
+          "type": "PHONE",
+          "text": "+7 928 765 43 21"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление контактной информации",
+      "id": 274
+    },
+    {
+      "text": "Обращайтесь! Хорошего дня!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Завершение разговора",
+      "id": 275
+    },
+    {
+      "text": "Здравствуйте! Я звоню, чтобы узнать результаты моего теста на COVID-19. - Да, конечно! Ваш паспорт, пожалуйста? - 40 12 345678. - Хорошо, вижу ваши результаты... они отрицательные.",
+      "entities": [
+        {
+          "start": 114,
+          "end": 126,
+          "type": "PASSPORT",
+          "text": "40 12 345678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Результаты теста на COVID-19",
+      "id": 283
+    },
+    {
+      "text": "Добрый день! Я ищу информацию о вашем пакете медицинских услуг. - Да, конечно! Наш пакет включает в себя полное медицинское обследование. - Хорошо, а сколько это стоит? - 15 тысяч рублей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинских услугах",
+      "id": 284
+    },
+    {
+      "text": "Привет! Мне нужно записаться к стоматологу в вашей клинике на Гражданском проспекте. - Окей, когда вам удобно? - Сегодня или завтра. - Есть слот сегодня в 16:00. Ваше имя, пожалуйста? - Анна.",
+      "entities": [
+        {
+          "start": 62,
+          "end": 82,
+          "type": "ADDRESS",
+          "text": "Гражданском проспекте"
+        },
+        {
+          "start": 193,
+          "end": 197,
+          "type": "PERSON",
+          "text": "Анна"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запись к стоматологу",
+      "id": 285
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего полиса ОМС. - Да, какой у вас вопрос? - Хочу узнать, покрывает ли он данную процедуру? - Да, покрывает. Ваш номер полиса, пожалуйста? - 1234567890123456.",
+      "entities": [
+        {
+          "start": 174,
+          "end": 190,
+          "type": "MEDICAL",
+          "text": "1234567890123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос о полисе ОМС",
+      "id": 286
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим новым медицинским центром на Дворцовой площади. - Да, мы недавно открыли новый центр. - Какие услуги вы предоставляете? - Полный спектр медицинских услуг.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском центре",
+      "id": 287
+    },
+    {
+      "text": "Привет! Мне нужно записаться на приём к кардиологу. - Окей, когда вам удобно? - На следующей неделе. - Есть слот в понедельник. Ваше ФИО, пожалуйста? - Петров Иван Сергеевич.",
+      "entities": [
+        {
+          "start": 152,
+          "end": 173,
+          "type": "PERSON",
+          "text": "Петров Иван Сергеевич"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запись на приём к кардиологу",
+      "id": 288
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт результатов моего УЗИ. - Да, ваш результат... отрицательный. - Хорошо, спасибо!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты УЗИ",
+      "id": 289
+    },
+    {
+      "text": "Добрый день! Я интересуюсь стоимостью вашей услуги по вакцинации от гриппа. - Да, стоимость 1500 рублей. - Хорошо, как можно записаться? - Позвоните нам или запишитесь онлайн, указав ваше имя и номер телефона.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о вакцинации",
+      "id": 290
+    },
+    {
+      "text": "Привет! Мне нужно узнать мой СНИЛС. - Окей, какой у вас вопрос? - Забыл номер. - Хорошо, ваш СНИЛС... 123-456-789 12.",
+      "entities": [
+        {
+          "start": 102,
+          "end": 116,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос о СНИЛС",
+      "id": 291
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего ИНН. - Да, какой у вас вопрос? - Нужно узнать ИНН для налоговой декларации. - Хорошо, ваш ИНН... 123456789012.",
+      "entities": [
+        {
+          "start": 132,
+          "end": 144,
+          "type": "INN",
+          "text": "123456789012"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос об ИНН",
+      "id": 292
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим медицинским оборудованием. - Да, у нас современное оборудование. - Какие модели вы используете? - Мы используем Philips и Siemens.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском оборудовании",
+      "id": 293
+    },
+    {
+      "text": "Привет! Мне нужно записаться на консультацию к неврологу. - Окей, когда вам удобно? - Сегодня. - Есть слот в 18:00. Ваше имя и телефон, пожалуйста? - Сергей, +7 921 123 45 67.",
+      "entities": [
+        {
+          "start": 151,
+          "end": 157,
+          "type": "PERSON",
+          "text": "Сергей"
+        },
+        {
+          "start": 159,
+          "end": 175,
+          "type": "PHONE",
+          "text": "+7 921 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запись на консультацию к неврологу",
+      "id": 294
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего банковского счета для оплаты медицинских услуг. - Да, какой у вас вопрос? - Как узнать остаток? - Вы можете проверить в вашем интернет-банке или позвонить в поддержку.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о банковском счете",
+      "id": 295
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим новым сервисом телемедицины. - Да, мы запустили его недавно. - Как это работает? - Вы можете консультироваться с врачами онлайн.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о телемедицине",
+      "id": 296
+    },
+    {
+      "text": "Привет! Мне нужно записаться на МРТ. - Окей, когда вам удобно? - Завтра. - Есть слот в 11:00. Ваш номер карты, пожалуйста? - 1234 5678 9012 3456.",
+      "entities": [
+        {
+          "start": 125,
+          "end": 144,
+          "type": "BANK_CARD",
+          "text": "1234 5678 9012 3456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запись на МРТ",
+      "id": 297
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчёт моего диагноза. - Да, какой у вас вопрос? - Хочу узнать больше о моём состоянии. - Хорошо, ваш диагноз... гипертония.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о диагнозе",
+      "id": 298
+    },
+    {
+      "text": "Добрый день! Я интересуюсь вашим медицинским центром на Невском проспекте. - Да, мы находимся там. - Какие услуги вы предоставляете? - Мы оказываем широкий спектр медицинских услуг.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Информация о медицинском центре",
+      "id": 299
+    },
+    {
+      "text": "Привет! Мне нужно узнать результаты моего теста на ковид. - Окей, ваш результат... отрицательный. - Хорошо, спасибо! Мой номер теста 123456.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Результаты теста на ковид",
+      "id": 300
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена Сергеевна. Я звоню из университета УрФУ. Мы проводим набор на курс по программированию. Вас интересует данное направление? - Да, интересует. Мне посоветовали ваш курс друзья. - Хорошо, давайте обсудим детали. Какой у вас возраст? - Мне 22 года. - Отлично, вы подходите под наши условия. Нужно будет предоставить паспортные данные для регистрации. - Хорошо, моя серия и номер паспорта 65 01 123456. - Отлично, мы вас запишем. Ожидайте подтверждения на почту elena.ivanova@mail.ru.",
+      "entities": [
+        {
+          "start": 25,
+          "end": 48,
+          "type": "PERSON",
+          "text": "Иванова Елена Сергеевна"
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "type": "EDUCATION",
+          "text": "УрФУ"
+        },
+        {
+          "start": 275,
+          "end": 277,
+          "type": "AGE",
+          "text": "22"
+        },
+        {
+          "start": 496,
+          "end": 517,
+          "type": "EMAIL",
+          "text": "elena.ivanova@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Разговор о записи на курсы в университете с упоминанием персональных данных",
+      "id": 301
+    },
+    {
+      "text": "Привет! Ты записался на курсы английского? - Да, записался. Буду учить с нуля. - Классно! Я тоже хочу записаться. Как тебя зовут? - Меня зовут Ваня. А тебя? - Катя. Какой у тебя телефон? - +7 912 345 67 89.",
+      "entities": [
+        {
+          "start": 143,
+          "end": 147,
+          "type": "PERSON",
+          "text": "Ваня"
+        },
+        {
+          "start": 157,
+          "end": 161,
+          "type": "PERSON",
+          "text": "Катя"
+        },
+        {
+          "start": 189,
+          "end": 205,
+          "type": "PHONE",
+          "text": "+7 912 345 67 89"
+        }
+      ],
+      "has_pd": true,
+      "description": "Неформальный разговор о курсах английского языка",
+      "id": 302
+    },
+    {
+      "text": "Здравствуйте! Я звоню из школы №13. Ваш сын, Сергей, пропустил занятия по математике. Нужно подтянуть алгебру. - Да, я в курсе. Спасибо за звонок. Какой у него возраст? - 15 лет.",
+      "entities": [
+        {
+          "start": 45,
+          "end": 51,
+          "type": "PERSON",
+          "text": "Сергей"
+        },
+        {
+          "start": 176,
+          "end": 178,
+          "type": "AGE",
+          "text": "15"
+        }
+      ],
+      "has_pd": true,
+      "description": "Звонок из школы о пропущенных занятиях",
+      "id": 303
+    },
+    {
+      "text": "Добрый день! Меня зовут Мария. Я менеджер по продажам в компании \"Уральский университет\". Мы проводим набор на подготовительные курсы. - Здравствуйте! Интересует. Как можно записаться? - Нужно прийти в наш офис на Ленина, 51.",
+      "entities": [
+        {
+          "start": 24,
+          "end": 29,
+          "type": "PERSON",
+          "text": "Мария"
+        },
+        {
+          "start": 33,
+          "end": 41,
+          "type": "POSITION",
+          "text": "менеджер"
+        },
+        {
+          "start": 66,
+          "end": 87,
+          "type": "ORGANIZATION",
+          "text": "Уральский университет"
+        }
+      ],
+      "has_pd": true,
+      "description": "Разговор о подготовительных курсах в университете",
+      "id": 304
+    },
+    {
+      "text": "Привет, это Саша. Я забыл свой номер СНИЛС. Ты не знаешь, где он написан? - Да, на твоей карте участника он есть. 123-456-789 12.",
+      "entities": [
+        {
+          "start": 12,
+          "end": 16,
+          "type": "PERSON",
+          "text": "Саша"
+        },
+        {
+          "start": 114,
+          "end": 128,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Разговор о номере СНИЛС",
+      "id": 305
+    },
+    {
+      "text": "Привет! Как тебя зовут? - Привет! Меня зовут Оля. А тебя? - Дима. Хочу записаться на курсы по Python. - Отлично, у нас есть такая программа.",
+      "entities": [
+        {
+          "start": 45,
+          "end": 48,
+          "type": "PERSON",
+          "text": "Оля"
+        },
+        {
+          "start": 59,
+          "end": 63,
+          "type": "PERSON",
+          "text": "Дима"
+        }
+      ],
+      "has_pd": true,
+      "description": "Неформальный разговор о курсах программирования",
+      "id": 308
+    },
+    {
+      "text": "Здравствуйте! Я звоню из регистратуры городской больницы. Нам нужен ваш СНИЛС для подтверждения записи. - Хорошо, мой СНИЛС 098-765-432 11.",
+      "entities": [
+        {
+          "start": 124,
+          "end": 138,
+          "type": "SNILS",
+          "text": "098-765-432 11"
+        }
+      ],
+      "has_pd": true,
+      "description": "Звонок из больницы с просьбой подтвердить СНИЛС",
+      "id": 309
+    }
+  ]
+}

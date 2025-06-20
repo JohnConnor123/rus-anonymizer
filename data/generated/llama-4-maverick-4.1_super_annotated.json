@@ -1,0 +1,853 @@
+{
+  "metadata": {
+    "total_dialogs": 50,
+    "generation_timestamp": 1750332431.125018,
+    "model_used": "meta-llama/llama-4-maverick",
+    "parent_dataset": "llama-4-maverick-4",
+    "subset_number": 1,
+    "dialog_range": "1-50",
+    "generation_stats": {
+      "total_generated": 0,
+      "successful_batches": 25,
+      "failed_batches": 0,
+      "total_cost_tokens": 101532,
+      "generation_configs": [
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Казань",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Новосибирск",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "официальный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 71,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "плохое",
+          "communication_style": "официальный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "официальный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Нижний Новгород",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 73,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        }
+      ]
+    },
+    "annotation_timestamp": 1750346117.146808,
+    "annotated": true,
+    "annotation_version": "super_precise_v6.0",
+    "annotation_stats": {
+      "total_dialogs": 50,
+      "dialogs_with_pd": 32,
+      "pd_percentage": 64.0,
+      "total_entities_found": 33,
+      "entity_types_distribution": {
+        "PERSON": 4,
+        "PHONE": 2,
+        "EMAIL": 5,
+        "ADDRESS": 7,
+        "PASSPORT": 3,
+        "SNILS": 3,
+        "BANK_CARD": 2,
+        "INN": 1,
+        "DRIVER_LICENSE": 1,
+        "VIN_NUMBER": 1,
+        "AGE": 1,
+        "ORGANIZATION": 3,
+        "BIRTHDAY": 1
+      }
+    }
+  },
+  "dialogs": [
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена Васильевна. Я звоню из компании 'Казанский Дом'. Мы занимаемся розничной торговлей стройматериалами. Как я могу вам помочь?",
+      "entities": [
+        {
+          "start": 25,
+          "end": 49,
+          "type": "PERSON",
+          "text": "Иванова Елена Васильевна"
+        },
+        {
+          "start": 73,
+          "end": 86,
+          "type": "ORGANIZATION",
+          "text": "Казанский Дом"
+        }
+      ],
+      "has_pd": true,
+      "description": "Приветствие менеджера",
+      "id": 1
+    },
+    {
+      "text": "Добрый день! Я хотел бы узнать о статусе моего заказа номер 14567. Мои контактные данные: +7 987 654 32 10.",
+      "entities": [
+        {
+          "start": 90,
+          "end": 106,
+          "type": "PHONE",
+          "text": "+7 987 654 32 10"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос статуса заказа",
+      "id": 2
+    },
+    {
+      "text": "Здравствуйте! Я оформлял заказ на сайте и указал email ivanov@mail.ru. Могу ли я получить счет на оплату?",
+      "entities": [
+        {
+          "start": 55,
+          "end": 69,
+          "type": "EMAIL",
+          "text": "ivanov@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос счета на оплату",
+      "id": 3
+    },
+    {
+      "text": "Да, конечно! Ваш заказ будет доставлен по адресу: г. Казань, ул. Горького, д. 12, кв. 34. Верно?",
+      "entities": [
+        {
+          "start": 50,
+          "end": 88,
+          "type": "ADDRESS",
+          "text": "г. Казань, ул. Горького, д. 12, кв. 34"
+        }
+      ],
+      "has_pd": true,
+      "description": "Подтверждение адреса доставки",
+      "id": 4
+    },
+    {
+      "text": "Мне нужно заполнить данные для доставки. Ваш паспорт: серия 9205 номер 123456?",
+      "entities": [
+        {
+          "start": 60,
+          "end": 77,
+          "type": "PASSPORT",
+          "text": "9205 123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос паспортных данных",
+      "id": 5
+    },
+    {
+      "text": "Да, все верно. И еще мне нужно указать СНИЛС: 123-456-789 12.",
+      "entities": [
+        {
+          "start": 46,
+          "end": 60,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание СНИЛС",
+      "id": 6
+    },
+    {
+      "text": "Общая сумма заказа составляет 12500 рублей. Оплатить можно на карту Сбербанка 4276 3800 1234 5678.",
+      "entities": [
+        {
+          "start": 78,
+          "end": 97,
+          "type": "BANK_CARD",
+          "text": "4276 3800 1234 5678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Информация об оплате",
+      "id": 7
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет возврата товара. Мой номер заказа: #2345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на возврат товара",
+      "id": 8
+    },
+    {
+      "text": "Хорошо, для возврата мне понадобится ваш ИНН: 165432165432.",
+      "entities": [
+        {
+          "start": 46,
+          "end": 58,
+          "type": "INN",
+          "text": "165432165432"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос ИНН для возврата",
+      "id": 9
+    },
+    {
+      "text": "У меня есть промокод на скидку. Могу ли я его использовать?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос о промокоде",
+      "id": 10
+    },
+    {
+      "text": "Да, конечно! Назовите ваш промокод.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ответ о промокоде",
+      "id": 11
+    },
+    {
+      "text": "Мой VIN номер автомобиля: XW8ZZZ4C9DW123456. Хочу заказать запчасти.",
+      "entities": [
+        {
+          "start": 26,
+          "end": 43,
+          "type": "VIN_NUMBER",
+          "text": "XW8ZZZ4C9DW123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Заказ запчастей с указанием VIN",
+      "id": 12
+    },
+    {
+      "text": "Для оформления гарантии нужен номер вашего водительского удостоверения: 12АВ123456.",
+      "entities": [
+        {
+          "start": 72,
+          "end": 82,
+          "type": "DRIVER_LICENSE",
+          "text": "12АВ123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос номера водительского удостоверения",
+      "id": 13
+    },
+    {
+      "text": "Я хочу купить iPhone 14 Pro Max. Какой у него артикул?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на модели техники",
+      "id": 14
+    },
+    {
+      "text": "Здравствуйте! Я из компании 'Казанский Мотор'. Наш адрес: г. Казань, ул. Восход, д. 1.",
+      "entities": [
+        {
+          "start": 29,
+          "end": 44,
+          "type": "ORGANIZATION",
+          "text": "Казанский Мотор"
+        },
+        {
+          "start": 58,
+          "end": 85,
+          "type": "ADDRESS",
+          "text": "г. Казань, ул. Восход, д. 1"
+        }
+      ],
+      "has_pd": true,
+      "description": "Приветствие с указанием компании и адреса",
+      "id": 15
+    },
+    {
+      "text": "Могу ли я оплатить заказ наличными при получении?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Вопрос об оплате",
+      "id": 16
+    },
+    {
+      "text": "Да, такая возможность есть. Доставка будет осуществлена курьером на адрес: г. Казань, ул. Профсоюзная, д. 45, кв. 67.",
+      "entities": [
+        {
+          "start": 75,
+          "end": 116,
+          "type": "ADDRESS",
+          "text": "г. Казань, ул. Профсоюзная, д. 45, кв. 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Информация о доставке",
+      "id": 17
+    },
+    {
+      "text": "Отлично! И еще скажите, пожалуйста, ваш email для отправки чека?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос email для отправки чека",
+      "id": 18
+    },
+    {
+      "text": "Мой email: petrov@yandex.ru. Спасибо!",
+      "entities": [
+        {
+          "start": 11,
+          "end": 27,
+          "type": "EMAIL",
+          "text": "petrov@yandex.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание email",
+      "id": 19
+    },
+    {
+      "text": "Все, ваш заказ принят! Чек будет отправлен на petrov@yandex.ru.",
+      "entities": [
+        {
+          "start": 46,
+          "end": 62,
+          "type": "EMAIL",
+          "text": "petrov@yandex.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Подтверждение отправки чека",
+      "id": 20
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иванова Елена. Я звоню из Новосибирского отделения Сбербанка. Мы рассматриваем вашу заявку на кредит. Скажите, вы сейчас свободны для разговора?",
+      "entities": [
+        {
+          "start": 25,
+          "end": 38,
+          "type": "PERSON",
+          "text": "Иванова Елена"
+        },
+        {
+          "start": 52,
+          "end": 86,
+          "type": "ORGANIZATION",
+          "text": "Новосибирского отделения Сбербанка"
+        }
+      ],
+      "has_pd": true,
+      "description": "Звонок из банка с упоминанием имени сотрудника",
+      "id": 21
+    },
+    {
+      "text": "Да, конечно. Я ждал вашего звонка. Номер договора у меня есть - 12345/67890.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент подтверждает ожидание звонка и указывает номер договора",
+      "id": 22
+    },
+    {
+      "text": "Хорошо. По вашей заявке требуется подтверждение дохода. Можете ли вы предоставить справку 2-НДФЛ?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на предоставление справки о доходах",
+      "id": 23
+    },
+    {
+      "text": "Да, конечно. Я могу принести ее в офис на Красном проспекте завтра после 14:00.",
+      "entities": [
+        {
+          "start": 43,
+          "end": 59,
+          "type": "ADDRESS",
+          "text": "Красном проспекте"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент соглашается принести справку и упоминает адрес офиса",
+      "id": 24
+    },
+    {
+      "text": "Отлично. Наш адрес: Красный проспект, 23. Ждем вас завтра. Ваше имя в системе - Сидорова Мария Ивановна?",
+      "entities": [
+        {
+          "start": 20,
+          "end": 41,
+          "type": "ADDRESS",
+          "text": "Красный проспект, 23"
+        },
+        {
+          "start": 81,
+          "end": 104,
+          "type": "PERSON",
+          "text": "Сидорова Мария Ивановна"
+        }
+      ],
+      "has_pd": true,
+      "description": "Подтверждение адреса офиса и имени клиента",
+      "id": 25
+    },
+    {
+      "text": "Да, все верно. Я буду завтра. До свидания!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент подтверждает имя и завершает разговор",
+      "id": 26
+    },
+    {
+      "text": "Здравствуйте! Я звоню насчет вашей карты. Номер карты заканчивается на 1234. Вы получали уведомление о блокировке?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Звонок с упоминанием последних цифр номера карты",
+      "id": 27
+    },
+    {
+      "text": "Нет, не получал. Что случилось?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент отвечает на вопрос о блокировке карты",
+      "id": 28
+    },
+    {
+      "text": "Возможно, была попытка мошенничества. Мы заблокировали карту для безопасности. Нужно приехать и переоформить новую.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Объяснение причины блокировки карты",
+      "id": 29
+    },
+    {
+      "text": "Хорошо. У меня есть паспорт под рукой - серия 5407, номер 123456. Я могу продиктовать?",
+      "entities": [
+        {
+          "start": 46,
+          "end": 64,
+          "type": "PASSPORT",
+          "text": "5407 123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент предлагает продиктовать паспортные данные",
+      "id": 30
+    },
+    {
+      "text": "Да, пожалуйста. Нам нужны эти данные для проверки.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает необходимость паспортных данных",
+      "id": 31
+    },
+    {
+      "text": "5407 123456. Выдан Ленинским РОВД Новосибирска в 2015 году.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 11,
+          "type": "PASSPORT",
+          "text": "5407 123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент диктует паспортные данные",
+      "id": 32
+    },
+    {
+      "text": "Спасибо. Все в порядке. Новая карта будет готова через 5 рабочих дней.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает получение данных и информирует о сроке изготовления новой карты",
+      "id": 33
+    },
+    {
+      "text": "Отлично! И еще вопрос - мой СНИЛС есть в деле? Номер 123-456-789 12.",
+      "entities": [
+        {
+          "start": 53,
+          "end": 67,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент спрашивает о наличии СНИЛС в деле и частично диктует номер",
+      "id": 34
+    },
+    {
+      "text": "Да, ваш СНИЛС у нас есть. Все в порядке.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка подтверждает наличие СНИЛС",
+      "id": 35
+    },
+    {
+      "text": "Здравствуйте! Я хочу открыть вклад. Какой у вас процент?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент интересуется условиями вклада",
+      "id": 36
+    },
+    {
+      "text": "Наш лучший вклад - 'Премиум'. 8% годовых. Вас интересует?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка предлагает вклад под определенный процент",
+      "id": 37
+    },
+    {
+      "text": "Да, интересно. Но сначала скажите, а что с безопасностью моих данных?",
+      "entities": [],
+      "has_pd": false,
+      "description": "Клиент выражает интерес к вкладу и задает вопрос о безопасности данных",
+      "id": 38
+    },
+    {
+      "text": "Все наши данные хранятся в соответствии с законом 152-ФЗ о персональных данных. Вы можете быть уверены в безопасности.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Сотрудник банка заверяет клиента в соответствии хранения данных законодательству",
+      "id": 39
+    },
+    {
+      "text": "Хорошо, я подумаю. Мой email - example@yandex.ru. Можете прислать подробности?",
+      "entities": [
+        {
+          "start": 31,
+          "end": 48,
+          "type": "EMAIL",
+          "text": "example@yandex.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Клиент предоставляет email для отправки подробностей",
+      "id": 40
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Петрович Сидоров. Я хотел бы узнать о статусе моего заказа.",
+      "entities": [
+        {
+          "start": 25,
+          "end": 47,
+          "type": "PERSON",
+          "text": "Иван Петрович Сидоров"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос статуса заказа",
+      "id": 41
+    },
+    {
+      "text": "Мой телефон +7 916 123 45 67. Позвоните мне, когда товар прибудет.",
+      "entities": [
+        {
+          "start": 12,
+          "end": 28,
+          "type": "PHONE",
+          "text": "+7 916 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Оставление контактного номера",
+      "id": 42
+    },
+    {
+      "text": "Я живу на улице Пушкинской, дом 123. Можете ли доставить товар туда?",
+      "entities": [
+        {
+          "start": 10,
+          "end": 35,
+          "type": "ADDRESS",
+          "text": "улице Пушкинской, дом 123"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание адреса доставки",
+      "id": 43
+    },
+    {
+      "text": "Моя электронная почта ivan@mail.ru. Отправьте детали заказа на нее.",
+      "entities": [
+        {
+          "start": 22,
+          "end": 34,
+          "type": "EMAIL",
+          "text": "ivan@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание email для отправки деталей заказа",
+      "id": 44
+    },
+    {
+      "text": "Мне 25 лет. Это важно для оформления гарантии.",
+      "entities": [
+        {
+          "start": 4,
+          "end": 6,
+          "type": "AGE",
+          "text": "25"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание возраста для гарантии",
+      "id": 45
+    },
+    {
+      "text": "Здравствуйте! Я хотел бы вернуть товар. Мой номер заказа #12345.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос на возврат товара",
+      "id": 46
+    },
+    {
+      "text": "Я купил товар в вашем магазине на улице Ленина. Теперь хочу вернуть.",
+      "entities": [
+        {
+          "start": 35,
+          "end": 47,
+          "type": "ADDRESS",
+          "text": "улице Ленина"
+        }
+      ],
+      "has_pd": true,
+      "description": "Возврат товара",
+      "id": 47
+    },
+    {
+      "text": "Моя карта МИР 2200 1234 5678 9012. Можно ли оплатить ею?",
+      "entities": [
+        {
+          "start": 14,
+          "end": 33,
+          "type": "BANK_CARD",
+          "text": "2200 1234 5678 9012"
+        }
+      ],
+      "has_pd": true,
+      "description": "Оплата картой",
+      "id": 48
+    },
+    {
+      "text": "Я родился в 1990 году. Это влияет на скидку?",
+      "entities": [
+        {
+          "start": 12,
+          "end": 21,
+          "type": "BIRTHDAY",
+          "text": "1990 году"
+        }
+      ],
+      "has_pd": true,
+      "description": "Вопрос о скидке в зависимости от возраста",
+      "id": 49
+    },
+    {
+      "text": "Мой СНИЛС 123-456-789 12. Нужно ли его указывать?",
+      "entities": [
+        {
+          "start": 10,
+          "end": 24,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Указание СНИЛС",
+      "id": 50
+    }
+  ]
+}

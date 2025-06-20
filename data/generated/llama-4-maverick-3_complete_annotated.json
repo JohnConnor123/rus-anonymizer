@@ -70,12 +70,6 @@
           "end": 46,
           "type": "PERSON",
           "text": "Иван Петрович Сидоров"
-        },
-        {
-          "start": 103,
-          "end": 113,
-          "type": "DATE",
-          "text": "10.02.2023"
         }
       ],
       "has_pd": true,
@@ -122,7 +116,7 @@
         {
           "start": 27,
           "end": 46,
-          "type": "BIRTH_YEAR",
+          "type": "BIRTHDAY",
           "text": "родился в 1955 году"
         }
       ],
@@ -145,12 +139,6 @@
           "end": 38,
           "type": "PERSON",
           "text": "Мария Ивановна"
-        },
-        {
-          "start": 78,
-          "end": 88,
-          "type": "DATE",
-          "text": "01.01.2023"
         }
       ],
       "has_pd": true,
@@ -343,7 +331,7 @@
         {
           "start": 89,
           "end": 108,
-          "type": "CARD_NUMBER",
+          "type": "BANK_CARD",
           "text": "4276 1234 5678 9012"
         }
       ],
@@ -354,6 +342,12 @@
     {
       "text": "Здравствуйте! Я из компании Рога и Копыта. Мы хотим открыть расчётный счёт. - Здравствуйте! Пришлите, пожалуйста, ваши реквизиты. - Наш ИНН 7701020304.",
       "entities": [
+        {
+          "start": 28,
+          "end": 41,
+          "type": "ORGANIZATION",
+          "text": "Рога и Копыта"
+        },
         {
           "start": 140,
           "end": 150,
@@ -405,7 +399,7 @@
         {
           "start": 83,
           "end": 102,
-          "type": "CARD_NUMBER",
+          "type": "BANK_CARD",
           "text": "4276 1234 5678 9012"
         }
       ],
@@ -666,15 +660,8 @@
     },
     {
       "text": "Я студент 3 курса. Мне нужно получить стипендию. Какие условия?",
-      "entities": [
-        {
-          "start": 2,
-          "end": 9,
-          "type": "PERSON",
-          "text": "студент"
-        }
-      ],
-      "has_pd": true,
+      "entities": [],
+      "has_pd": false,
       "description": "Запрос о стипендии",
       "id": 54
     },
@@ -757,8 +744,15 @@
     },
     {
       "text": "Да, конечно! Наш мастер приедет к вам 15 марта в 10:00. Ваш адрес: улица Ленина, дом 5.",
-      "entities": [],
-      "has_pd": false,
+      "entities": [
+        {
+          "start": 68,
+          "end": 86,
+          "type": "ADDRESS",
+          "text": "улица Ленина, дом 5"
+        }
+      ],
+      "has_pd": true,
       "description": "Подтверждение визита мастера",
       "id": 62
     },
@@ -915,7 +909,7 @@
         {
           "start": 15,
           "end": 34,
-          "type": "CARD_NUMBER",
+          "type": "BANK_CARD",
           "text": "2200 1234 5678 9012"
         }
       ],
@@ -934,10 +928,16 @@
       "text": "Я родился в 1990 году. Мне сейчас 33 года.",
       "entities": [
         {
-          "start": 2,
+          "start": 12,
           "end": 21,
-          "type": "BIRTH_YEAR",
-          "text": "родился в 1990 году"
+          "type": "BIRTHDAY",
+          "text": "1990 году"
+        },
+        {
+          "start": 34,
+          "end": 41,
+          "type": "AGE",
+          "text": "33 года"
         }
       ],
       "has_pd": true,
@@ -1088,9 +1088,9 @@
       "entities": [
         {
           "start": 12,
-          "end": 16,
+          "end": 18,
           "type": "PERSON",
-          "text": "Иван"
+          "text": "Иванов"
         }
       ],
       "has_pd": true,

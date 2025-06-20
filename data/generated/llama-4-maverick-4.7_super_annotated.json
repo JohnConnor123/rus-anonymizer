@@ -1,0 +1,999 @@
+{
+  "metadata": {
+    "total_dialogs": 50,
+    "generation_timestamp": 1750332431.129882,
+    "model_used": "meta-llama/llama-4-maverick",
+    "parent_dataset": "llama-4-maverick-4",
+    "subset_number": 7,
+    "dialog_range": "301-350",
+    "generation_stats": {
+      "total_generated": 0,
+      "successful_batches": 25,
+      "failed_batches": 0,
+      "total_cost_tokens": 101532,
+      "generation_configs": [
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Казань",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Новосибирск",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "услуги",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "розничная торговля",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "официальный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "плохое",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 71,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "разговорный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "образование",
+          "regional_focus": "Екатеринбург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 13,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "плохое",
+          "communication_style": "официальный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 12,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 72,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "финансы",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 70,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "техподдержка",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 74,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "среднее",
+          "communication_style": "официальный",
+          "pd_percentage": 79,
+          "false_positive_percentage": 14,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Нижний Новгород",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 78,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "автомобили",
+          "regional_focus": "Ростов-на-Дону",
+          "transcription_quality": "отличное",
+          "communication_style": "смешанный",
+          "pd_percentage": 77,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "медицина",
+          "regional_focus": "Санкт-Петербург",
+          "transcription_quality": "среднее",
+          "communication_style": "смешанный",
+          "pd_percentage": 76,
+          "false_positive_percentage": 15,
+          "batch_size": 20
+        },
+        {
+          "business_sphere": "недвижимость",
+          "regional_focus": "Москва",
+          "transcription_quality": "отличное",
+          "communication_style": "разговорный",
+          "pd_percentage": 73,
+          "false_positive_percentage": 10,
+          "batch_size": 20
+        }
+      ]
+    },
+    "annotation_timestamp": 1750346117.244548,
+    "annotated": true,
+    "annotation_version": "super_precise_v6.0_manual_corrected",
+    "annotation_stats": {
+      "total_dialogs": 50,
+      "dialogs_with_pd": 38,
+      "pd_percentage": 76.0,
+      "total_entities_found": 75,
+      "entity_types_distribution": {
+        "INN": 2,
+        "EDUCATION": 3,
+        "PHONE": 16,
+        "POSITION": 2,
+        "EMAIL": 8,
+        "SNILS": 1,
+        "ORGANIZATION": 2,
+        "BANK_CARD": 1,
+        "PERSON": 10,
+        "PASSPORT": 2,
+        "CAR_NUMBER": 1,
+        "AGE": 2,
+        "BIRTHDAY": 1,
+        "VIN_NUMBER": 1
+      }
+    }
+  },
+  "dialogs": [
+    {
+      "text": "Добрый день! Я интересуюсь курсами по повышению квалификации. Что вы можете предложить? - У нас есть различные программы. Давайте обсудим детали. Какой у вас опыт работы? - 5 лет.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о курсах повышения квалификации",
+      "id": 310
+    },
+    {
+      "text": "Привет! Ты будешь на встрече выпускников? - Да, буду. Когда она? - В следующую субботу на площади 1905 года.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о встрече выпускников",
+      "id": 311
+    },
+    {
+      "text": "Здравствуйте! Я звоню из налоговой инспекции. Нам нужен ваш ИНН для проверки. - Хорошо, мой ИНН 665601234567.",
+      "entities": [
+        {
+          "start": 96,
+          "end": 108,
+          "type": "INN",
+          "text": "665601234567"
+        }
+      ],
+      "has_pd": true,
+      "description": "Звонок из налоговой инспекции с просьбой предоставить ИНН",
+      "id": 312
+    },
+    {
+      "text": "Добрый день! Я хочу узнать о стоимости обучения в УрФУ. - Здравствуйте! Стоимость зависит от направления. Могу прислать вам информацию на email.",
+      "entities": [
+        {
+          "start": 50,
+          "end": 54,
+          "type": "EDUCATION",
+          "text": "УрФУ"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос информации о стоимости обучения в университете",
+      "id": 313
+    },
+    {
+      "text": "Привет! Как дела? - Привет! Все хорошо. Собираюсь поступать в магистратуру. - Поздравляю! В какой вуз? - В УрГУПС.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 6,
+          "type": "EDUCATION",
+          "text": "Привет"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "type": "EDUCATION",
+          "text": "Как"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "type": "EDUCATION",
+          "text": "дела"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "type": "EDUCATION",
+          "text": "Привет"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "type": "EDUCATION",
+          "text": "Все"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "type": "EDUCATION",
+          "text": "хорошо"
+        },
+        {
+          "start": 40,
+          "end": 49,
+          "type": "EDUCATION",
+          "text": "Собираюсь"
+        },
+        {
+          "start": 50,
+          "end": 59,
+          "type": "EDUCATION",
+          "text": "поступать"
+        },
+        {
+          "start": 62,
+          "end": 74,
+          "type": "EDUCATION",
+          "text": "магистратуру"
+        },
+        {
+          "start": 78,
+          "end": 88,
+          "type": "EDUCATION",
+          "text": "Поздравляю"
+        },
+        {
+          "start": 92,
+          "end": 97,
+          "type": "EDUCATION",
+          "text": "какой"
+        },
+        {
+          "start": 109,
+          "end": 115,
+          "type": "EDUCATION",
+          "text": "УрГУПС"
+        }
+      ],
+      "has_pd": true,
+      "description": "Разговор о поступлении в магистратуру",
+      "id": 314
+    },
+    {
+      "text": "Здравствуйте! Я звоню из пенсионного фонда. Нам нужен ваш номер телефона для подтверждения данных. - Хорошо, мой номер +7 922 123 45 67.",
+      "entities": [
+        {
+          "start": 119,
+          "end": 135,
+          "type": "PHONE",
+          "text": "+7 922 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Звонок из пенсионного фонда с просьбой подтвердить номер телефона",
+      "id": 315
+    },
+    {
+      "text": "Добрый день! Я интересуюсь получением стипендии. Какие условия? - Нужно иметь средний балл не ниже 4.5 и справку о доходах родителей.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор об условиях получения стипендии",
+      "id": 316
+    },
+    {
+      "text": "Привет! Ты записался на курсы вождения? - Да, записался. Буду сдавать на права категории B. - Удачи! Мне нужно было получить права категории C.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о курсах вождения и категориях прав",
+      "id": 317
+    },
+    {
+      "text": "Здравствуйте! Я звоню из университета. Мы проводим опрос среди студентов. Какой у вас возраст? - 20 лет.",
+      "entities": [
+        {
+          "start": 0,
+          "end": 12,
+          "type": "EDUCATION",
+          "text": "Здравствуйте"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "type": "EDUCATION",
+          "text": "звоню"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "type": "EDUCATION",
+          "text": "из"
+        },
+        {
+          "start": 98,
+          "end": 100,
+          "type": "AGE",
+          "text": "20"
+        }
+      ],
+      "has_pd": true,
+      "description": "Опрос среди студентов университета",
+      "id": 318
+    },
+    {
+      "text": "Добрый день! Я хочу узнать о возможности перевода в другой вуз. - Здравствуйте! Это возможно при наличии свободных мест.",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о переводе в другой вуз",
+      "id": 319
+    },
+    {
+      "text": "Привет! Ты будешь на лекции по истории? - Да, буду. Она будет в ауд. 304 на Ленина, 51. - Отлично, увидимся!",
+      "entities": [],
+      "has_pd": false,
+      "description": "Разговор о лекции в университете",
+      "id": 320
+    },
+    {
+      "text": "Здравствуйте меня завут Иван Иванович я хачу купить квартмру в Ростове на Дону на улице Ленина",
+      "entities": [
+        {
+          "start": 24,
+          "end": 37,
+          "type": "PERSON",
+          "text": "Иван Иванович"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос на покупку квартиры",
+      "id": 321
+    },
+    {
+      "text": "Меня интересует двухкомнатная квартира в районе Театральной площади мой телефон 89001234567",
+      "entities": [
+        {
+          "start": 80,
+          "end": 91,
+          "type": "PHONE",
+          "text": "89001234567"
+        }
+      ],
+      "has_pd": true,
+      "description": "Интерес к двухкомнатной квартире",
+      "id": 322
+    },
+    {
+      "text": "Я менеджер компании Ростов Недвижимость мой email ivanov@rostovned.ru",
+      "entities": [
+        {
+          "start": 2,
+          "end": 10,
+          "type": "POSITION",
+          "text": "менеджер"
+        },
+        {
+          "start": 50,
+          "end": 69,
+          "type": "EMAIL",
+          "text": "ivanov@rostovned.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Представление менеджера",
+      "id": 323
+    },
+    {
+      "text": "Кадастровый номер участка 61:12:123456:789",
+      "entities": [],
+      "has_pd": false,
+      "description": "Уточнение кадастрового номера",
+      "id": 324
+    },
+    {
+      "text": "Мне нужно оформить договор купли продажи мой снилс 123-456-789 12",
+      "entities": [
+        {
+          "start": 51,
+          "end": 65,
+          "type": "SNILS",
+          "text": "123-456-789 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание СНИЛС",
+      "id": 325
+    },
+    {
+      "text": "Здравствуйте я хочу узнать про квартиру на улице Пушкинской",
+      "entities": [],
+      "has_pd": false,
+      "description": "Запрос информации о квартире",
+      "id": 326
+    },
+    {
+      "text": "Мой паспорт серия 61 02 номер 123456 выдан в Ростове",
+      "entities": [
+        {
+          "start": 18,
+          "end": 23,
+          "type": "PASSPORT",
+          "text": "61 02"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "type": "PASSPORT",
+          "text": "123456"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание паспортных данных",
+      "id": 327
+    },
+    {
+      "text": "Цена квартиры 5 миллионов рублей",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение цены",
+      "id": 328
+    },
+    {
+      "text": "Моя банковская карта номер 2200 1234 5678 9012",
+      "entities": [
+        {
+          "start": 27,
+          "end": 46,
+          "type": "BANK_CARD",
+          "text": "2200 1234 5678 9012"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание номера банковской карты",
+      "id": 329
+    },
+    {
+      "text": "Я родился в 1990 году мне сейчас 33 года",
+      "entities": [
+        {
+          "start": 12,
+          "end": 21,
+          "type": "BIRTHDAY",
+          "text": "1990 году"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "type": "AGE",
+          "text": "33"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание возраста",
+      "id": 330
+    },
+    {
+      "text": "Госномер моего автомобиля а 123 аа 61",
+      "entities": [
+        {
+          "start": 26,
+          "end": 37,
+          "type": "CAR_NUMBER",
+          "text": "а 123 аа 61"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание госномера автомобиля",
+      "id": 331
+    },
+    {
+      "text": "Я работаю в компании РостовАвто мой инн 616102345678",
+      "entities": [
+        {
+          "start": 40,
+          "end": 52,
+          "type": "INN",
+          "text": "616102345678"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание ИНН организации",
+      "id": 332
+    },
+    {
+      "text": "Модель телефона iPhone 14 Pro Max",
+      "entities": [],
+      "has_pd": false,
+      "description": "Ложное срабатывание на модели техники",
+      "id": 333
+    },
+    {
+      "text": "Я учусь в Южном Федеральном Университете",
+      "entities": [
+        {
+          "start": 10,
+          "end": 40,
+          "type": "EDUCATION",
+          "text": "Южном Федеральном Университете"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание учебного заведения",
+      "id": 334
+    },
+    {
+      "text": "Мой отец Петя ему 55 лет",
+      "entities": [],
+      "has_pd": false,
+      "description": "Упоминание члена семьи",
+      "id": 335
+    },
+    {
+      "text": "Я проживаю в районе Западного жилого массива",
+      "entities": [],
+      "has_pd": false,
+      "description": "Обсуждение района проживания",
+      "id": 336
+    },
+    {
+      "text": "Меня зовут Мария Ивановна мой телефон 8 918 123 45 67",
+      "entities": [
+        {
+          "start": 11,
+          "end": 25,
+          "type": "PERSON",
+          "text": "Мария Ивановна"
+        },
+        {
+          "start": 38,
+          "end": 53,
+          "type": "PHONE",
+          "text": "8 918 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Предоставление контактной информации",
+      "id": 337
+    },
+    {
+      "text": "Квартира находится на 5 этаже в доме номер 12",
+      "entities": [],
+      "has_pd": false,
+      "description": "Описание квартиры",
+      "id": 338
+    },
+    {
+      "text": "Мой email address mariya@mail.ru",
+      "entities": [
+        {
+          "start": 18,
+          "end": 32,
+          "type": "EMAIL",
+          "text": "mariya@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание email адреса",
+      "id": 339
+    },
+    {
+      "text": "VIN номер автомобиля XWXXXXXXXXXXXXXXX",
+      "entities": [
+        {
+          "start": 21,
+          "end": 38,
+          "type": "VIN_NUMBER",
+          "text": "XWXXXXXXXXXXXXXXX"
+        }
+      ],
+      "has_pd": true,
+      "description": "Упоминание VIN номера автомобиля",
+      "id": 340
+    },
+    {
+      "text": "Здравствуйте! Меня зовут Иван Иванович. Я звоню по поводу автомобиля Toyota Camry 2018 года. Пробег 50 тысяч км. Хозяин продает, звонить +7 921 123 45 67.",
+      "entities": [
+        {
+          "start": 25,
+          "end": 38,
+          "type": "PERSON",
+          "text": "Иван Иванович"
+        },
+        {
+          "start": 137,
+          "end": 153,
+          "type": "PHONE",
+          "text": "+7 921 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос о продаже автомобиля",
+      "id": 341
+    },
+    {
+      "text": "Привет! Хочу продать свой BMW X5. Год выпуска 2020, пробег 20 тысяч. Мой номер 8921 765 43 21.",
+      "entities": [
+        {
+          "start": 79,
+          "end": 93,
+          "type": "PHONE",
+          "text": "8921 765 43 21"
+        }
+      ],
+      "has_pd": true,
+      "description": "Продажа автомобиля",
+      "id": 342
+    },
+    {
+      "text": "Добрый день! Интересует цена на Hyundai Solaris. Email для связи: example@mail.ru",
+      "entities": [
+        {
+          "start": 66,
+          "end": 81,
+          "type": "EMAIL",
+          "text": "example@mail.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос цены на автомобиль",
+      "id": 343
+    },
+    {
+      "text": "Здравствуйте! Хочу узнать о возможности тест-драйва Kia Rio. Звоните +7 911 234 56 78.",
+      "entities": [
+        {
+          "start": 69,
+          "end": 85,
+          "type": "PHONE",
+          "text": "+7 911 234 56 78"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос о тест-драйве",
+      "id": 344
+    },
+    {
+      "text": "Привет! Продаю свой старый Nissan Qashqai 2015 года. Пробег 80 тысяч. Свяжитесь со мной по номеру 8 921 345 67 89.",
+      "entities": [
+        {
+          "start": 98,
+          "end": 113,
+          "type": "PHONE",
+          "text": "8 921 345 67 89"
+        }
+      ],
+      "has_pd": true,
+      "description": "Продажа подержанного автомобиля",
+      "id": 345
+    },
+    {
+      "text": "Добрый день! Интересует комплектация Volkswagen Polo. Можете прислать на почту ivan@example.com",
+      "entities": [
+        {
+          "start": 79,
+          "end": 95,
+          "type": "EMAIL",
+          "text": "ivan@example.com"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос комплектации автомобиля",
+      "id": 346
+    },
+    {
+      "text": "Здравствуйте! Я менеджер автосалона. Звоните +7 921 456 78 90 для подробностей.",
+      "entities": [
+        {
+          "start": 16,
+          "end": 24,
+          "type": "POSITION",
+          "text": "менеджер"
+        },
+        {
+          "start": 45,
+          "end": 61,
+          "type": "PHONE",
+          "text": "+7 921 456 78 90"
+        }
+      ],
+      "has_pd": true,
+      "description": "Приглашение от менеджера автосалона",
+      "id": 347
+    },
+    {
+      "text": "Привет! Хочу купить подержанный Ford Focus. Есть ли у вас варианты? Email: buyer@yandex.ru",
+      "entities": [
+        {
+          "start": 75,
+          "end": 90,
+          "type": "EMAIL",
+          "text": "buyer@yandex.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Поиск подержанного автомобиля",
+      "id": 348
+    },
+    {
+      "text": "Добрый день! Интересует стоимость страховки КАСКО для Mazda 3. Мой телефон 8 911 567 89 01.",
+      "entities": [
+        {
+          "start": 75,
+          "end": 90,
+          "type": "PHONE",
+          "text": "8 911 567 89 01"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос стоимости страховки",
+      "id": 349
+    },
+    {
+      "text": "Здравствуйте! Я продаю свой Renault Logan 2012 года. Пробег 120 тысяч. Звоните 8921 678 90 12.",
+      "entities": [
+        {
+          "start": 79,
+          "end": 93,
+          "type": "PHONE",
+          "text": "8921 678 90 12"
+        }
+      ],
+      "has_pd": true,
+      "description": "Продажа старого автомобиля",
+      "id": 350
+    },
+    {
+      "text": "Привет! Хочу узнать о наличии Subaru Outback. Свяжитесь со мной по email: subaru_fan@gmail.com",
+      "entities": [
+        {
+          "start": 74,
+          "end": 94,
+          "type": "EMAIL",
+          "text": "subaru_fan@gmail.com"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос о наличии автомобиля",
+      "id": 351
+    },
+    {
+      "text": "Добрый день! Интересует цена на Mercedes-Benz E-Class. Можете позвонить мне на номер +7 921 789 01 23.",
+      "entities": [
+        {
+          "start": 85,
+          "end": 101,
+          "type": "PHONE",
+          "text": "+7 921 789 01 23"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос цены на автомобиль",
+      "id": 352
+    },
+    {
+      "text": "Здравствуйте! Я ищу автомобиль в кредит. Можете прислать условия на почту: kredit@example.ru",
+      "entities": [
+        {
+          "start": 75,
+          "end": 92,
+          "type": "EMAIL",
+          "text": "kredit@example.ru"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос условий кредита",
+      "id": 353
+    },
+    {
+      "text": "Привет! Продаю свой старый мотоцикл. Документы в порядке. Звоните 8 911 890 12 34.",
+      "entities": [
+        {
+          "start": 66,
+          "end": 81,
+          "type": "PHONE",
+          "text": "8 911 890 12 34"
+        }
+      ],
+      "has_pd": true,
+      "description": "Продажа мотоцикла",
+      "id": 354
+    },
+    {
+      "text": "Добрый день! Хочу узнать о тест-драйве Audi A4. Номер для связи: +7 921 901 23 45.",
+      "entities": [
+        {
+          "start": 65,
+          "end": 81,
+          "type": "PHONE",
+          "text": "+7 921 901 23 45"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос тест-драйва",
+      "id": 355
+    },
+    {
+      "text": "Здравствуйте! Интересует наличие Skoda Octavia. Свяжитесь со мной по телефону 8921 012 34 56.",
+      "entities": [
+        {
+          "start": 78,
+          "end": 92,
+          "type": "PHONE",
+          "text": "8921 012 34 56"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос наличия автомобиля",
+      "id": 356
+    },
+    {
+      "text": "Привет! Хочу продать свой автомобиль быстро. Номер телефона: 8 911 123 45 67.",
+      "entities": [
+        {
+          "start": 61,
+          "end": 76,
+          "type": "PHONE",
+          "text": "8 911 123 45 67"
+        }
+      ],
+      "has_pd": true,
+      "description": "Продажа автомобиля",
+      "id": 357
+    },
+    {
+      "text": "Добрый день! Интересует комплектация Honda Civic. Email для связи: honda_civic@example.com",
+      "entities": [
+        {
+          "start": 67,
+          "end": 90,
+          "type": "EMAIL",
+          "text": "honda_civic@example.com"
+        }
+      ],
+      "has_pd": true,
+      "description": "Запрос комплектации автомобиля",
+      "id": 358
+    },
+    {
+      "text": "Здравствуйте! Я покупатель из Санкт-Петербурга. Интересует Toyota RAV4. Звоните +7 921 234 56 78.",
+      "entities": [
+        {
+          "start": 80,
+          "end": 96,
+          "type": "PHONE",
+          "text": "+7 921 234 56 78"
+        }
+      ],
+      "has_pd": true,
+      "description": "Покупка автомобиля",
+      "id": 359
+    }
+  ]
+}
