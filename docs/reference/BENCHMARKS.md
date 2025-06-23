@@ -254,13 +254,13 @@ anonymizer = HybridAnonymizer(
 ### Быстрое тестирование:
 ```bash
 source venv/bin/activate
-python tests/validate_simple.py --dataset data/processed/merged_dataset.json
+python scripts/validate_simple.py --dataset data/processed/merged_dataset.json
 ```
 
 ### Полное тестирование с DeepPavlov:
 ```bash
 source venv-deeppavlov/bin/activate
-python tests/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 100
+python scripts/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 100
 ```
 
 ### Создание собственного датасета:

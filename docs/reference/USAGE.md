@@ -124,11 +124,11 @@ python scripts/merge_datasets.py --input data/generated/*.json --train-ratio 0.7
 
 ```bash
 # Быстрая валидация всех анонимизаторов
-python tests/validate_simple.py --dataset data/processed/merged_dataset.json
+python scripts/validate_simple.py --dataset data/processed/merged_dataset.json
 
 # Валидация DeepPavlov (отдельное окружение)
 source venv-deeppavlov/bin/activate
-python tests/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 50
+python scripts/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 50
 ```
 
 ## 📊 Анализ результатов

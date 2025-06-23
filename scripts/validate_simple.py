@@ -8,8 +8,10 @@ import json
 import time
 import sys
 import argparse
+import csv
 from pathlib import Path
 from typing import Dict, List, Tuple, Any
+from collections import defaultdict
 import os
 
 # Добавляем корневую папку проекта в путь
@@ -29,28 +31,8 @@ def load_test_dataset(dataset_path: str = None) -> List[Dict]:
     Загружает тестовый датасет из JSON файла.
     Поддерживает стандартный формат с metadata и dialogs.
     """
-    if dataset_path:
-        test_file_path = dataset_path
-    else:
-        # Проверяем наличие файлов в порядке приоритета
-        possible_files = [
-            "data/generated/deepseek_v3_dataset_manual_final.json",
-            "data/generated/deepseek_v3_dataset.json",
-            "test_dataset.json"
-        ]
-        
-        test_file_path = None
-        for file_path in possible_files:
-            if os.path.exists(file_path):
-                test_file_path = file_path
-                break
-        
-        if not test_file_path:
-            print(f"❌ Не найден тестовый датасет. Проверьте наличие файлов:")
-            for file_path in possible_files:
-                print(f"   - {file_path}")
-            return []
-
+    test_file_path = dataset_path
+    
     print(f"📂 Загрузка датасета: {test_file_path}")
     
     try:
@@ -269,8 +251,123 @@ def improve_extracted_entities(extracted: List[Tuple[int, int, str, str]], text:
     return final_improved
 
 
-def validate_anonymizer(anonymizer, name: str, test_data: List[Dict]) -> Dict[str, Any]:
-    """Валидирует один анонимизатор."""
+def calculate_metrics_by_type(true_entities: List[Dict], predicted_entities: List[Dict], 
+                             overlap_threshold: float = 0.2) -> Dict[str, Dict[str, float]]:
+    """
+    Вычисляет метрики precision, recall, F1, accuracy для каждого типа сущности отдельно.
+    Возвращает словарь {entity_type: {metric_name: value}}.
+    """
+    # Группируем сущности по типам
+    true_by_type = defaultdict(list)
+    pred_by_type = defaultdict(list)
+    
+    for entity in true_entities:
+        true_by_type[entity['type']].append(entity)
+    
+    for entity in predicted_entities:
+        pred_by_type[entity['type']].append(entity)
+    
+    # Получаем все уникальные типы
+    all_types = set(true_by_type.keys()) | set(pred_by_type.keys())
+    
+    metrics_by_type = {}
+    
+    # Вычисляем метрики для каждого типа
+    for entity_type in all_types:
+        true_type_entities = true_by_type[entity_type]
+        pred_type_entities = pred_by_type[entity_type]
+        
+        # Используем умное сопоставление для этого типа
+        tp, total_true, total_pred = smart_entity_matching(true_type_entities, pred_type_entities, overlap_threshold)
+        
+        fp = total_pred - tp
+        fn = total_true - tp
+        
+        precision = tp / total_pred if total_pred > 0 else 0.0
+        recall = tp / total_true if total_true > 0 else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+        accuracy = tp / (tp + fp + fn) if (tp + fp + fn) > 0 else 0.0
+        
+        metrics_by_type[entity_type] = {
+            'precision': precision,
+            'recall': recall,
+            'f1': f1,
+            'accuracy': accuracy,
+            'tp': tp,
+            'fp': fp,
+            'fn': fn,
+            'total_true': total_true,
+            'total_pred': total_pred
+        }
+    
+    # Добавляем общие метрики (ALL)
+    overall_metrics = calculate_metrics(true_entities, predicted_entities)
+    overall_metrics['accuracy'] = overall_metrics['tp'] / (overall_metrics['tp'] + overall_metrics['fp'] + overall_metrics['fn']) if (overall_metrics['tp'] + overall_metrics['fp'] + overall_metrics['fn']) > 0 else 0.0
+    overall_metrics['total_true'] = len(true_entities)
+    overall_metrics['total_pred'] = len(predicted_entities)
+    
+    metrics_by_type['ALL'] = overall_metrics
+    
+    return metrics_by_type
+
+
+def get_dataset_name(dataset_path: str) -> str:
+    """Извлекает название датасета из пути к файлу."""
+    return Path(dataset_path).stem
+
+
+def save_metrics_to_csv(metrics_by_type: Dict[str, Dict[str, float]], 
+                       method_name: str, dataset_name: str, output_dir: Path):
+    """Сохраняет метрики анонимизатора в CSV файл."""
+    # Создаем безопасное имя файла
+    safe_method_name = method_name.replace(" ", "_").replace("/", "_")
+    filename = f"{dataset_name}_{safe_method_name}_metrics.csv"
+    filepath = output_dir / filename
+    
+    # Создаем директорию если не существует
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['entity_type', 'precision', 'recall', 'f1', 'accuracy', 'tp', 'fp', 'fn', 'total_true', 'total_pred']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        writer.writeheader()
+        for entity_type, metrics in metrics_by_type.items():
+            row = {'entity_type': entity_type}
+            row.update(metrics)
+            writer.writerow(row)
+    
+    print(f"💾 Метрики {method_name} сохранены в {filepath}")
+
+
+def save_combined_metrics_to_csv(all_results: Dict[str, Dict[str, Dict[str, float]]], 
+                                dataset_name: str, output_dir: Path):
+    """Сохраняет объединенные метрики всех анонимизаторов в один CSV файл."""
+    filename = f"{dataset_name}_combined_metrics.csv"
+    filepath = output_dir / filename
+    
+    # Создаем директорию если не существует
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['method', 'entity_type', 'precision', 'recall', 'f1', 'accuracy', 'tp', 'fp', 'fn', 'total_true', 'total_pred']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        writer.writeheader()
+        for method_name, metrics_by_type in all_results.items():
+            for entity_type, metrics in metrics_by_type.items():
+                row = {
+                    'method': method_name,
+                    'entity_type': entity_type
+                }
+                row.update(metrics)
+                writer.writerow(row)
+    
+    print(f"💾 Объединенные метрики сохранены в {filepath}")
+
+
+def validate_anonymizer(anonymizer, name: str, test_data: List[Dict]) -> Tuple[Dict[str, Any], Dict[str, Dict[str, float]]]:
+    """Валидирует один анонимизатор и возвращает общие метрики и метрики по типам."""
     print(f"\n🔍 Валидация {name}...")
     
     start_time = time.time()
@@ -315,17 +412,20 @@ def validate_anonymizer(anonymizer, name: str, test_data: List[Dict]) -> Dict[st
     
     total_time = time.time() - start_time
     
-    # Вычисляем метрики
-    metrics = calculate_metrics(all_true_entities, all_predicted_entities)
+    # Вычисляем общие метрики
+    overall_metrics = calculate_metrics(all_true_entities, all_predicted_entities)
     
-    # Добавляем информацию о производительности
-    metrics.update({
+    # Вычисляем метрики по типам
+    metrics_by_type = calculate_metrics_by_type(all_true_entities, all_predicted_entities)
+    
+    # Добавляем информацию о производительности к общим метрикам
+    overall_metrics.update({
         'total_time': total_time,
         'avg_time_per_example': sum(processing_times) / len(processing_times) if processing_times else 0,
         'examples_processed': len(processing_times)
     })
     
-    return metrics
+    return overall_metrics, metrics_by_type
 
 
 def print_results(results: Dict[str, Dict[str, Any]]):
@@ -375,8 +475,8 @@ def main():
     parser.add_argument(
         '--dataset', '-d',
         type=str,
-        default=None,
-        help='Путь к датасету для валидации. По умолчанию ищет test_dataset.json'
+        required=True,
+        help='Путь к датасету для валидации.'
     )
     
     args = parser.parse_args()
@@ -392,6 +492,13 @@ def main():
     
     print(f"📋 Загружено {len(test_data)} примеров для тестирования")
     
+    # Получаем название датасета
+    dataset_name = get_dataset_name(args.dataset)
+    print(f"📊 Название датасета: {dataset_name}")
+    
+    # Папка для сохранения отчетов
+    output_dir = Path("data/reports")
+    
     # Список анонимизаторов для тестирования
     anonymizers = {
         "RegExp Baseline": RegExpBaselineAnonymizer(),
@@ -405,19 +512,32 @@ def main():
     
     # Валидируем каждый анонимизатор
     results = {}
+    all_detailed_results = {}
     
     for name, anonymizer in anonymizers.items():
         try:
-            metrics = validate_anonymizer(anonymizer, name, test_data)
-            results[name] = metrics
-            print(f"✅ {name}: F1={metrics['f1']:.3f}, P={metrics['precision']:.3f}, R={metrics['recall']:.3f}")
+            overall_metrics, metrics_by_type = validate_anonymizer(anonymizer, name, test_data)
+            results[name] = overall_metrics
+            all_detailed_results[name] = metrics_by_type
+            
+            print(f"✅ {name}: F1={overall_metrics['f1']:.3f}, P={overall_metrics['precision']:.3f}, R={overall_metrics['recall']:.3f}")
+            
+            # Сохраняем метрики анонимизатора в отдельный CSV
+            save_metrics_to_csv(metrics_by_type, name, dataset_name, output_dir)
+            
         except Exception as e:
             print(f"❌ Ошибка в {name}: {e}")
             continue
     
+    # Сохраняем объединенные метрики
+    if all_detailed_results:
+        save_combined_metrics_to_csv(all_detailed_results, dataset_name, output_dir)
+    
     # Выводим итоговые результаты
     if results:
         print_results(results)
+        print(f"\n📁 Отчеты сохранены в папку: {output_dir}")
+        print(f"📄 Всего файлов создано: {len(anonymizers) + 1}")
     else:
         print("❌ Не удалось получить результаты валидации")
 

@@ -8,6 +8,8 @@ from pathlib import Path
 from typing import List, Dict, Any, Tuple
 from dataclasses import dataclass
 import logging
+import argparse
+import glob
 from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
@@ -210,4 +212,72 @@ class DatasetProcessor:
             "merged": merged_data,
             "train": train_data,
             "val": val_data
-        } 
+        }
+
+
+def analyze_dataset(file_path: str):
+    """Анализирует один датасет и выводит статистику"""
+    processor = DatasetProcessor([file_path])
+    data = processor.load_dataset(file_path)
+    stats = processor.calculate_stats(data.get('dialogs', []))
+    
+    print(f"\n📊 Статистика датасета: {file_path}")
+    print(f"Всего диалогов: {stats.total_dialogs}")
+    print(f"Диалогов с ПД: {stats.pd_dialogs} ({stats.pd_percentage:.1f}%)")
+    print(f"Диалогов без ПД: {stats.non_pd_dialogs}")
+    print(f"Всего сущностей: {stats.total_entities}")
+    
+    if stats.entity_types:
+        print("\nТипы сущностей:")
+        for entity_type, count in sorted(stats.entity_types.items()):
+            print(f"  {entity_type}: {count}")
+
+
+def main():
+    """Главная функция"""
+    parser = argparse.ArgumentParser(description="Обработка датасетов")
+    parser.add_argument('--input', help='Входной файл датасета')
+    parser.add_argument('--merge', nargs='+', help='Файлы для объединения (можно указать несколько или использовать glob)')
+    parser.add_argument('--output', help='Выходной файл')
+    parser.add_argument('--analyze-only', action='store_true', help='Только анализ без сохранения')
+    parser.add_argument('--train-ratio', type=float, default=0.7, help='Доля train датасета')
+    
+    args = parser.parse_args()
+    
+    if args.analyze_only and args.input:
+        analyze_dataset(args.input)
+        return
+        
+    if args.merge:
+        # Если передан паттерн glob, расширяем его
+        files = []
+        for pattern in args.merge:
+            if '*' in pattern or '?' in pattern:
+                files.extend(glob.glob(pattern))
+            else:
+                files.append(pattern)
+        
+        if not files:
+            print(f"❌ Не найдено файлов для объединения")
+            return
+            
+        processor = DatasetProcessor(files)
+        merged_data = processor.merge_datasets()
+        
+        if args.output:
+            processor.save_dataset(merged_data, Path(args.output).name)
+            print(f"✅ Датасеты объединены и сохранены в: {args.output}")
+        else:
+            print("✅ Датасеты объединены (результат не сохранен)")
+            
+    elif args.input:
+        processor = DatasetProcessor([args.input])
+        # Дополнительная обработка для одного файла
+        print(f"📁 Обрабатываю файл: {args.input}")
+        analyze_dataset(args.input)
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main() 

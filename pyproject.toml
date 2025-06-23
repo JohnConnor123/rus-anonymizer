@@ -13,6 +13,10 @@ dependencies = [
     "deeppavlov (>=1.7.0,<2.0.0)"
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["debug"]
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

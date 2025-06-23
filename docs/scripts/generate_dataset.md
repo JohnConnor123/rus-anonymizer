@@ -170,4 +170,4 @@ datetime
 - `config.env` - Файл конфигурации
 - `scripts/dataset_config.py` - Настройки типов диалогов
 - `scripts/annotate_dataset.py` - Дополнительная разметка
-- `tests/validate_simple.py` - Проверка качества датасета 
+- `scripts/validate_simple.py` - Проверка качества датасета 

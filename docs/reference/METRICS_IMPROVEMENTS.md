@@ -71,14 +71,14 @@ RegExp Baseline;ALL;0.000;0.000;0.000;0.000;0;1;4
 ### Простая валидация (основное окружение)
 ```bash
 source venv/bin/activate
-python3 tests/validate_simple.py --dataset data/processed/merged_dataset.json
+python3 scripts/validate_simple.py --dataset data/processed/merged_dataset.json
 ```
 **Результат:** консольный отчет + CSV файлы в `data/reports/`
 
 ### DeepPavlov валидация (DeepPavlov окружение)
 ```bash
 source venv-deeppavlov/bin/activate
-python3 tests/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 10
+python3 scripts/validate_deeppavlov_improved.py --dataset data/processed/merged_dataset.json --max-examples 10
 ```
 
 ### Объединение датасетов
@@ -132,12 +132,12 @@ data/reports/
 
 ### Модификации файлов
 
-#### `tests/validate_simple.py`
+#### `scripts/validate_simple.py`
 - ✅ Добавлена функция `calculate_metrics_by_type()`
 - ✅ Обновлена функция `calculate_metrics()` с поддержкой метрик по типам
 - ✅ Расширена функция `print_results()` с детальными таблицами
 
-#### `tests/validate_deeppavlov_improved.py`
+#### `scripts/validate_deeppavlov_improved.py`
 - ✅ Добавлена функция `calculate_metrics_by_type()` 
 - ✅ Обновлена функция `analyze_deeppavlov_improved()` с метриками по типам
 - ✅ Исправлена ошибка `TypeError: string indices must be integers`
