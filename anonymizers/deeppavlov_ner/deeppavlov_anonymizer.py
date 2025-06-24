@@ -134,12 +134,7 @@ class DeepPavlovAnonymizer(BaseAnonymizer):
             'LOCATION': 'LOCATION',
             'GPE': 'LOCATION',
             'MISC': 'MISC',
-            'MONEY': 'MONEY',
-            'DATE': 'DATE',
-            'TIME': 'TIME',
-            'PERCENT': 'PERCENT',
-            'CARDINAL': 'NUMBER',
-            'ORDINAL': 'NUMBER'
+            'DATE': 'BIRTHDAY',
         }
         
         return mapping.get(dp_type.upper())
@@ -273,12 +268,7 @@ class DeepPavlovMultiModelAnonymizer(BaseAnonymizer):
             'LOCATION': 'LOCATION',
             'GPE': 'LOCATION',
             'MISC': 'MISC',
-            'MONEY': 'MONEY',
-            'DATE': 'DATE',
-            'TIME': 'TIME',
-            'PERCENT': 'PERCENT',
-            'CARDINAL': 'NUMBER',
-            'ORDINAL': 'NUMBER'
+            'DATE': 'BIRTHDAY',
         }
         
         return mapping.get(dp_type.upper())

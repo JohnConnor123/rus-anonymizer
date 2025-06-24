@@ -1,4 +1,5 @@
 venv*/
+data/reports/
+config.env
 .vscode/
 **/__pycache__/
-config.env

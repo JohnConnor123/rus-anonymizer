@@ -3,7 +3,6 @@
 Поддерживает EntityRuler для создания собственных правил распознавания.
 """
 
-import re
 from typing import List, Dict, Optional, Tuple, Callable, Any
 
 try:
@@ -204,8 +203,8 @@ class SpacyAnonymizer(BaseAnonymizer):
         try:
             # Добавляем паттерны в matcher
             if work_patterns:
-                self.matcher.add("WORK", work_patterns)
-                print(f"✅ Добавлено {len(work_patterns)} паттернов WORK")
+                self.matcher.add("POSITION", work_patterns)
+                print(f"✅ Добавлено {len(work_patterns)} паттернов POSITION")
             
             if address_patterns:
                 self.matcher.add("ADDRESS", address_patterns)
@@ -268,7 +267,6 @@ class SpacyAnonymizer(BaseAnonymizer):
             'ORG': 'ORGANIZATION',
             'GPE': 'LOCATION',
             'LOC': 'LOCATION',
-            'MONEY': 'MONEY',
             'DATE': 'DATE',
             'TIME': 'TIME',
             'PERCENT': 'PERCENT',

@@ -145,7 +145,7 @@ class RegExpBaselineAnonymizer(BaseAnonymizer):
         # Банковские карты
         for pattern in self.card_patterns:
             for match in pattern.finditer(text):
-                entities.append((match.start(), match.end(), 'CARD', match.group()))
+                entities.append((match.start(), match.end(), 'BANK_CARD', match.group()))
         
         # Даты рождения
         for pattern in self.birthday_patterns:
@@ -165,7 +165,7 @@ class RegExpBaselineAnonymizer(BaseAnonymizer):
         # Сокращенные имена
         for pattern in self.short_name_patterns:
             for match in pattern.finditer(text):
-                entities.append((match.start(), match.end(), 'SHORT_NAME', match.group()))
+                entities.append((match.start(), match.end(), 'PERSON', match.group()))
         
         # Русские имена (только если агрессивность высокая)
         if self.aggressiveness > 0.6:
@@ -173,7 +173,7 @@ class RegExpBaselineAnonymizer(BaseAnonymizer):
                 for match in pattern.finditer(text):
                     # Проверяем, что это не пересекается с уже найденными сущностями
                     if not self._overlaps_with_existing(match.start(), match.end(), entities):
-                        entities.append((match.start(), match.end(), 'RUSSIAN_NAME', match.group()))
+                        entities.append((match.start(), match.end(), 'PERSON', match.group()))
         
         # Номера автомобилей
         for pattern in self.car_number_patterns:
@@ -212,14 +212,13 @@ class RegExpBaselineAnonymizer(BaseAnonymizer):
             'PASSPORT': 9,
             'SNILS': 9,
             'INN': 8,
-            'CARD': 8,
+            'BANK_CARD': 8,
             'BIRTHDAY': 7,
-            'SHORT_NAME': 6,
+            'PERSON': 7,
             'IP_ADDRESS': 5,
             'URL': 5,
             'CAR_NUMBER': 4,
             'AGE': 3,
-            'RUSSIAN_NAME': 2,
         }
         
         result = []

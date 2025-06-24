@@ -17,6 +17,9 @@ from collections import defaultdict
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
+# Импорт обновлённого модуля метрик
+from utils.metrics import calculate_metrics, calculate_metrics_by_type
+
 try:
     from anonymizers.deeppavlov_ner.deeppavlov_anonymizer import DeepPavlovAnonymizer
     DEEPPAVLOV_AVAILABLE = True
@@ -35,40 +38,6 @@ def load_test_dataset(filename: str = "test_dataset.json") -> List[Dict]:
     except FileNotFoundError:
         print(f"❌ Файл {test_file} не найден")
         return []
-
-
-def entities_overlap(entity1: Tuple[int, int, str], entity2: Tuple[int, int, str]) -> bool:
-    """Проверяет, перекрываются ли две сущности."""
-    start1, end1, type1 = entity1
-    start2, end2, type2 = entity2
-    
-    # Типы должны совпадать
-    if type1 != type2:
-        return False
-    
-    # Проверяем перекрытие координат
-    return not (end1 <= start2 or end2 <= start1)
-
-
-def calculate_overlap_score(entity1: Tuple[int, int, str], entity2: Tuple[int, int, str]) -> float:
-    """Вычисляет степень перекрытия двух сущностей (0.0 - 1.0)."""
-    start1, end1, type1 = entity1
-    start2, end2, type2 = entity2
-    
-    if type1 != type2:
-        return 0.0
-    
-    # Находим пересечение
-    overlap_start = max(start1, start2)
-    overlap_end = min(end1, end2)
-    
-    if overlap_start >= overlap_end:
-        return 0.0
-    
-    overlap_length = overlap_end - overlap_start
-    union_length = max(end1, end2) - min(start1, start2)
-    
-    return overlap_length / union_length if union_length > 0 else 0.0
 
 
 def merge_person_entities(entities: List[Tuple[int, int, str, str]]) -> List[Tuple[int, int, str, str]]:
@@ -135,89 +104,6 @@ def improve_age_entities(entities: List[Tuple[int, int, str, str]], text: str) -
     return improved
 
 
-def calculate_metrics(true_entities: List[Dict], predicted_entities: List[Dict]) -> Dict[str, float]:
-    """Вычисляет метрики precision, recall, F1."""
-    
-    # Используем умное сопоставление
-    tp, total_true, total_pred = smart_entity_matching(true_entities, predicted_entities)
-    
-    fp = total_pred - tp  # False Positives
-    fn = total_true - tp  # False Negatives
-    
-    precision = tp / total_pred if total_pred > 0 else 0.0
-    recall = tp / total_true if total_true > 0 else 0.0
-    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
-    
-    return {
-        'precision': precision,
-        'recall': recall,
-        'f1': f1,
-        'tp': tp,
-        'fp': fp,
-        'fn': fn
-    }
-
-
-def calculate_metrics_by_type(true_entities: List[Dict], predicted_entities: List[Dict], 
-                             overlap_threshold: float = 0.3) -> Dict[str, Dict[str, float]]:
-    """
-    Вычисляет метрики precision, recall, F1, accuracy для каждого типа сущности отдельно.
-    Возвращает словарь {entity_type: {metric_name: value}}.
-    """
-    # Группируем сущности по типам
-    true_by_type = defaultdict(list)
-    pred_by_type = defaultdict(list)
-    
-    for entity in true_entities:
-        true_by_type[entity['type']].append(entity)
-    
-    for entity in predicted_entities:
-        pred_by_type[entity['type']].append(entity)
-    
-    # Получаем все уникальные типы
-    all_types = set(true_by_type.keys()) | set(pred_by_type.keys())
-    
-    metrics_by_type = {}
-    
-    # Вычисляем метрики для каждого типа
-    for entity_type in all_types:
-        true_type_entities = true_by_type[entity_type]
-        pred_type_entities = pred_by_type[entity_type]
-        
-        # Используем умное сопоставление для этого типа
-        tp, total_true, total_pred = smart_entity_matching(true_type_entities, pred_type_entities, overlap_threshold)
-        
-        fp = total_pred - tp
-        fn = total_true - tp
-        
-        precision = tp / total_pred if total_pred > 0 else 0.0
-        recall = tp / total_true if total_true > 0 else 0.0
-        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
-        accuracy = tp / (tp + fp + fn) if (tp + fp + fn) > 0 else 0.0
-        
-        metrics_by_type[entity_type] = {
-            'precision': precision,
-            'recall': recall,
-            'f1': f1,
-            'accuracy': accuracy,
-            'tp': tp,
-            'fp': fp,
-            'fn': fn,
-            'total_true': total_true,
-            'total_pred': total_pred
-        }
-    
-    # Добавляем общие метрики (ALL)
-    overall_metrics = calculate_metrics(true_entities, predicted_entities)
-    overall_metrics['accuracy'] = overall_metrics['tp'] / (overall_metrics['tp'] + overall_metrics['fp'] + overall_metrics['fn']) if (overall_metrics['tp'] + overall_metrics['fp'] + overall_metrics['fn']) > 0 else 0.0
-    overall_metrics['total_true'] = len(true_entities)
-    overall_metrics['total_pred'] = len(predicted_entities)
-    
-    metrics_by_type['ALL'] = overall_metrics
-    
-    return metrics_by_type
-
-
 def get_dataset_name(dataset_path: str) -> str:
     """Извлекает название датасета из пути к файлу."""
     return Path(dataset_path).stem
@@ -235,7 +121,7 @@ def save_metrics_to_csv(metrics_by_type: Dict[str, Dict[str, float]],
     output_dir.mkdir(parents=True, exist_ok=True)
     
     with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['entity_type', 'precision', 'recall', 'f1', 'accuracy', 'tp', 'fp', 'fn', 'total_true', 'total_pred']
+        fieldnames = ['entity_type', 'precision', 'recall', 'f1', 'tp', 'fp', 'fn', 'total_true', 'total_pred', 'class_proportion']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
         writer.writeheader()
@@ -287,7 +173,7 @@ def update_combined_metrics_csv(metrics_by_type: Dict[str, Dict[str, float]],
     # Записываем обновленные данные
     all_data = existing_data + new_rows
     with open(combined_filepath, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['method', 'entity_type', 'precision', 'recall', 'f1', 'accuracy', 'tp', 'fp', 'fn', 'total_true', 'total_pred']
+        fieldnames = ['method', 'entity_type', 'precision', 'recall', 'f1', 'tp', 'fp', 'fn', 'total_true', 'total_pred', 'class_proportion']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
         writer.writeheader()
@@ -296,68 +182,6 @@ def update_combined_metrics_csv(metrics_by_type: Dict[str, Dict[str, float]],
     
     print(f"✅ Данные {method_name} добавлены в сводную таблицу {combined_filepath}")
     return True
-
-
-def smart_entity_matching(true_entities: List[Dict], predicted_entities, 
-                         overlap_threshold: float = 0.3) -> Tuple[int, int, int]:
-    """
-    Умное сопоставление сущностей с учетом перекрытий.
-    Поддерживает два режима:
-    1. predicted_entities - List[Tuple[int, int, str, str]] с текстом (старый режим)
-    2. predicted_entities - List[Dict] без текста (новый режим для метрик по типам)
-    
-    Возвращает (правильные, всего_истинных, всего_найденных).
-    """
-    
-    # Проверяем тип predicted_entities для выбора режима обработки
-    if predicted_entities and isinstance(predicted_entities[0], tuple):
-        # Старый режим - с текстом и улучшениями
-        found_entities = predicted_entities
-        # Улучшаем найденные сущности
-        found_entities = merge_person_entities(found_entities)
-        # Не можем улучшить AGE без текста в этом режиме
-        
-        # Преобразуем в удобный формат
-        true_set = [(e['start'], e['end'], e['type']) for e in true_entities]
-        found_set = [(start, end, entity_type) for start, end, entity_type, _ in found_entities]
-    else:
-        # Новый режим - List[Dict], как true_entities
-        found_entities = predicted_entities
-        
-        # Преобразуем в удобный формат
-        true_set = [(e['start'], e['end'], e['type']) for e in true_entities]
-        found_set = [(e['start'], e['end'], e['type']) for e in found_entities]
-    
-    matched_true = set()
-    matched_found = set()
-    
-    # Ищем точные совпадения
-    exact_matches = set(true_set) & set(found_set)
-    matched_true.update(exact_matches)
-    matched_found.update(exact_matches)
-    
-    # Ищем перекрытия для несовпавших
-    remaining_true = [e for e in true_set if e not in matched_true]
-    remaining_found = [e for e in found_set if e not in matched_found]
-    
-    for true_entity in remaining_true:
-        best_match = None
-        best_score = 0.0
-        
-        for found_entity in remaining_found:
-            if found_entity in matched_found:
-                continue
-                
-            score = calculate_overlap_score(true_entity, found_entity)
-            if score > best_score and score >= overlap_threshold:
-                best_score = score
-                best_match = found_entity
-        
-        if best_match:
-            matched_true.add(true_entity)
-            matched_found.add(best_match)
-    
-    return len(matched_true), len(true_entities), len(found_entities)
 
 
 def validate_deeppavlov(test_data: List[Dict], dataset_name: str) -> Tuple[Dict[str, Any], Dict[str, Dict[str, float]]]:
@@ -419,10 +243,10 @@ def validate_deeppavlov(test_data: List[Dict], dataset_name: str) -> Tuple[Dict[
     
     total_time = time.time() - start_time
     
-    # Вычисляем общие метрики
+    # Вычисляем общие метрики (строгий режим по умолчанию)
     overall_metrics = calculate_metrics(all_true_entities, all_predicted_entities)
     
-    # Вычисляем метрики по типам
+    # Вычисляем метрики по типам (строгий режим по умолчанию)
     metrics_by_type = calculate_metrics_by_type(all_true_entities, all_predicted_entities)
     
     # Добавляем информацию о производительности к общим метрикам
@@ -534,7 +358,7 @@ def analyze_deeppavlov_improved(dataset_path: str = None, update_pivot: bool = F
     
     # Итоговая статистика
     print("\n" + "=" * 60)
-    print("📊 УЛУЧШЕННАЯ СТАТИСТИКА")
+    print("📊 СТРОГИЕ МЕТРИКИ (EXACT MATCH)")
     print("=" * 60)
     
     print(f"Всего ожидаемых сущностей: {overall_metrics['tp'] + overall_metrics['fn']}")

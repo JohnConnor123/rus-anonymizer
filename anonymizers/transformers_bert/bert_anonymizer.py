@@ -105,7 +105,6 @@ class BertAnonymizer(BaseAnonymizer):
             'LOCATION': 'LOCATION',
             'MISC': 'MISC',
             'GPE': 'LOCATION',
-            'MONEY': 'MONEY',
             'DATE': 'DATE',
             'TIME': 'TIME',
             'PERCENT': 'PERCENT',
@@ -169,40 +168,6 @@ class RuBertAnonymizer(BertAnonymizer):
             anonymization_func, 
             "DeepPavlov/rubert-base-cased"
         )
-        
-        # Добавляем специфичные для русского языка паттерны
-        self._init_russian_patterns()
-    
-    def _init_russian_patterns(self):
-        """Дополнительные паттерны для русского языка."""
-        # Создаем словарь паттернов если его нет
-        if not hasattr(self, 'patterns'):
-            self.patterns = {}
-            
-        russian_patterns = {
-            'PATRONYMIC': [
-                r'\b[А-Я][а-я]+[ео]вич\b',  # Отчества на -ович/-евич
-                r'\b[А-Я][а-я]+[ео]вна\b',  # Отчества на -овна/-евна
-            ],
-            'RUSSIAN_NAME': [
-                r'\b[А-Я][а-я]+\s+[А-Я][а-я]+[ео]вич\b',  # Имя + отчество
-                r'\b[А-Я][а-я]+\s+[А-Я][а-я]+[ео]вна\b',  # Имя + отчество женское
-            ],
-            'MEDICAL': [
-                r'полис\s+ОМС[:\s]*\d+',
-                r'медицинский\s+полис[:\s]*\d+',
-                r'группа\s+крови[:\s]*[АBАВ0О]\([IVX]+\)Rh[+-]',
-                r'аллергия\s+на\s+[а-яё\s]+',
-            ],
-            'CAR_NUMBER': [
-                r'\b[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\d{2,3}\b',
-                r'номер\s+[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\d{2,3}',
-            ],
-        }
-        
-        # Добавляем к существующим паттернам
-        self.patterns.update(russian_patterns)
-
 
 class MultiBertAnonymizer(BaseAnonymizer):
     """Анонимизатор, использующий несколько BERT моделей одновременно."""

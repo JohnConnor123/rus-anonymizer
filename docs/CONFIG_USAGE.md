@@ -2,7 +2,7 @@
 
 ## Обзор
 
-Скрипт `generate_dataset.py` был изменен для использования конфигурации из файла `config.env` вместо аргументов командной строки.
+Скрипт `generate_dataset.py` использует конфигурацию из файла `config.env` для настройки параметров генерации датасетов.
 
 ## Структура файла config.env
 
@@ -35,21 +35,16 @@ DRY_RUN=false
 
 ## Способы запуска
 
-### 1. Через bash скрипт (рекомендуется)
-```bash
-./run_generator.sh
-```
-
-### 2. Напрямую с активацией окружения
+### 1. Напрямую с активацией окружения (рекомендуется)
 ```bash
 source venv/bin/activate
-python generate_dataset.py
+python scripts/generate_dataset.py
 ```
 
-### 3. Тестирование конфигурации
+### 2. Тестирование с разными настройками
+Отредактируйте `config.env` под ваши нужды:
 ```bash
-source venv/bin/activate
-python test_config.py
+nano config.env
 ```
 
 ## Режимы работы
@@ -78,22 +73,53 @@ DRY_RUN=true
 ## Файлы модульной архитектуры
 
 - `scripts/config_loader.py` - модуль загрузки конфигурации
-- `test_config.py` - тестирование конфигурации
-- `run_generator.sh` - bash скрипт запуска
+- `scripts/generate_dataset.py` - основной скрипт генерации
 - `config.env` - файл конфигурации
+- `config.env.example` - пример конфигурации
 
-## Преимущества новой системы
+## Преимущества системы конфигурации
 
 1. **Простота использования** - не нужно помнить аргументы командной строки
 2. **Повторяемость** - одинаковая конфигурация для всех запусков
 3. **Безопасность** - API ключи хранятся в файле, а не в истории команд
-4. **Автоматизация** - легко интегрировать в CI/CD
-5. **Модульность** - отдельные модули для разных функций 
+4. **Автоматизация** - легко интегрировать в скрипты
+5. **Модульность** - отдельные модули для разных функций
 
-## Изменения в generate_dataset.py
+## Настройка конфигурации
 
-Скрипт `scripts/generate_dataset.py` был изменен для использования конфигурации из файла `config.env` вместо аргументов командной строки. 
+### Первоначальная настройка:
+```bash
+# Скопируйте пример
+cp config.env.example config.env
+
+# Отредактируйте файл
+nano config.env
+
+# Добавьте ваш OpenAI API ключ
+OPENAI_API_KEY=your-actual-api-key-here
+```
+
+### Для разных проектов:
+```bash
+# Создайте копии конфигурации
+cp config.env config-small.env
+cp config.env config-large.env
+
+# Настройте под разные нужды
+echo "TOTAL_DIALOGS=50" >> config-small.env
+echo "TOTAL_DIALOGS=500" >> config-large.env
+```
+
+## Использование в скриптах
 
 ```bash
+# Использование основной конфигурации
 python scripts/generate_dataset.py
+
+# Проверка конфигурации через модуль
+python -c "
+from scripts.config_loader import load_config
+config = load_config()
+print(f'Будет создано {config.TOTAL_DIALOGS} диалогов')
+"
 ``` 

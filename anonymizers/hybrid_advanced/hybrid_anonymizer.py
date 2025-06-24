@@ -30,12 +30,14 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
         aggressiveness: float = 0.8,
         anonymization_func: Optional[Callable[[str, str], str]] = None,
         use_consensus: bool = True,
-        consensus_threshold: float = 0.4
+        consensus_threshold: float = 0.4,
+        verbose: bool = False
     ):
         super().__init__(aggressiveness, anonymization_func)
         
         self.use_consensus = use_consensus
         self.consensus_threshold = consensus_threshold
+        self.verbose = verbose
         
         # Словарь анонимизаторов и их весов
         self.anonymizers = {}
@@ -46,7 +48,8 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
     
     def _init_anonymizers(self):
         """Инициализация всех доступных анонимизаторов (без DeepPavlov)."""
-        print("🔧 Инициализация гибридного анонимизатора...")
+        if self.verbose:
+            print("🔧 Инициализация гибридного анонимизатора...")
         
         # 1. Natasha Enhanced (обычно работает стабильно)
         try:
@@ -54,9 +57,11 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
                 aggressiveness=self.aggressiveness
             )
             self.anonymizer_weights['natasha'] = 1.0
-            print("✅ Natasha Enhanced загружен")
+            if self.verbose:
+                print("✅ Natasha Enhanced загружен")
         except Exception as e:
-            print(f"❌ Ошибка загрузки Natasha: {e}")
+            if self.verbose:
+                print(f"❌ Ошибка загрузки Natasha: {e}")
         
         # 2. spaCy Extended (может иметь проблемы с моделью)
         try:
@@ -64,9 +69,11 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
                 aggressiveness=self.aggressiveness
             )
             self.anonymizer_weights['spacy'] = 1.1
-            print("✅ SpaCy Extended загружен")
+            if self.verbose:
+                print("✅ SpaCy Extended загружен")
         except Exception as e:
-            print(f"❌ Ошибка загрузки SpaCy: {e}")
+            if self.verbose:
+                print(f"❌ Ошибка загрузки SpaCy: {e}")
         
         # 3. BERT Transformers (может требовать много памяти)
         try:
@@ -74,9 +81,11 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
                 aggressiveness=self.aggressiveness
             )
             self.anonymizer_weights['bert'] = 1.3
-            print("✅ BERT Transformers загружен")
+            if self.verbose:
+                print("✅ BERT Transformers загружен")
         except Exception as e:
-            print(f"❌ Ошибка загрузки BERT: {e}")
+            if self.verbose:
+                print(f"❌ Ошибка загрузки BERT: {e}")
         
         # 4. RegExp Baseline (всегда должен работать)
         try:
@@ -84,11 +93,14 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
                 aggressiveness=self.aggressiveness
             )
             self.anonymizer_weights['regexp'] = 0.7
-            print("✅ RegExp Baseline загружен")
+            if self.verbose:
+                print("✅ RegExp Baseline загружен")
         except Exception as e:
-            print(f"❌ Ошибка загрузки RegExp: {e}")
+            if self.verbose:
+                print(f"❌ Ошибка загрузки RegExp: {e}")
         
-        print(f"🎯 Гибридный анонимизатор готов с {len(self.anonymizers)} компонентами")
+        if self.verbose:
+            print(f"🎯 Гибридный анонимизатор готов с {len(self.anonymizers)} компонентами")
         
         if not self.anonymizers:
             raise RuntimeError("❌ Не удалось загрузить ни одного анонимизатора!")
@@ -108,9 +120,11 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
             try:
                 entities = anonymizer.extract_entities(text)
                 all_results[name] = entities
-                print(f"📊 {name}: найдено {len(entities)} сущностей")
+                if self.verbose:
+                    print(f"📊 {name}: найдено {len(entities)} сущностей")
             except Exception as e:
-                print(f"❌ Ошибка в {name}: {e}")
+                error_emoji = "❌ " if self.verbose else ""
+                print(f"{error_emoji}Ошибка в {name}: {e}")
                 all_results[name] = []
         
         # Объединяем результаты
@@ -162,7 +176,8 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
         # Убираем пересечения
         final_entities = self._remove_overlapping(final_entities)
         
-        print(f"🤝 Консенсус: {len(final_entities)} сущностей прошли порог {self.consensus_threshold}")
+        if self.verbose:
+            print(f"🤝 Консенсус: {len(final_entities)} сущностей прошли порог {self.consensus_threshold}")
         return sorted(final_entities, key=lambda x: x[0])
     
     def _simple_merge(self, all_results: Dict[str, List]) -> List[Tuple[int, int, str, str]]:
@@ -177,7 +192,8 @@ class HybridAdvancedAnonymizer(BaseAnonymizer):
         # Убираем дубликаты и пересечения
         unique_entities = self._remove_overlapping(all_entities)
         
-        print(f"🔗 Простое объединение: {len(unique_entities)} уникальных сущностей")
+        if self.verbose:
+            print(f"🔗 Простое объединение: {len(unique_entities)} уникальных сущностей")
         return sorted(unique_entities, key=lambda x: x[0])
     
     def _remove_overlapping(self, entities: List[Tuple[int, int, str, str]]) -> List[Tuple[int, int, str, str]]:
